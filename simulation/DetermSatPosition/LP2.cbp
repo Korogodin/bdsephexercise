@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="LP2" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="./LP2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="./objs/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="-static-libstdc++" />
+					<Add option="-static-libgcc" />
+					<Add option="-static" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="./LP2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="./build/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="$exe_output" />
+					<Mode after="always" />
+				</ExtraCommands>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="../UnitTest++" />
+		</Compiler>
+		<Linker>
+			<Add option="-static-libstdc++" />
+			<Add option="-static-libgcc" />
+			<Add option="-static" />
+			<Add library="../UnitTest++/Deliv/Release/libUnitTest++.a" />
+			<Add library="../libopenblas.lib" />
+		</Linker>
+		<Unit filename="../UnitTest++/AssertException.cpp" />
+		<Unit filename="../UnitTest++/AssertException.h" />
+		<Unit filename="../UnitTest++/CheckMacros.h" />
+		<Unit filename="../UnitTest++/Checks.cpp" />
+		<Unit filename="../UnitTest++/Checks.h" />
+		<Unit filename="../UnitTest++/CompositeTestReporter.cpp" />
+		<Unit filename="../UnitTest++/CompositeTestReporter.h" />
+		<Unit filename="../UnitTest++/Config.h" />
+		<Unit filename="../UnitTest++/CurrentTest.cpp" />
+		<Unit filename="../UnitTest++/CurrentTest.h" />
+		<Unit filename="../UnitTest++/DeferredTestReporter.cpp" />
+		<Unit filename="../UnitTest++/DeferredTestReporter.h" />
+		<Unit filename="../UnitTest++/DeferredTestResult.cpp" />
+		<Unit filename="../UnitTest++/DeferredTestResult.h" />
+		<Unit filename="../UnitTest++/ExceptionMacros.h" />
+		<Unit filename="../UnitTest++/ExecuteTest.h" />
+		<Unit filename="../UnitTest++/HelperMacros.h" />
+		<Unit filename="../UnitTest++/Makefile.am" />
+		<Unit filename="../UnitTest++/MemoryOutStream.cpp" />
+		<Unit filename="../UnitTest++/MemoryOutStream.h" />
+		<Unit filename="../UnitTest++/ReportAssert.cpp" />
+		<Unit filename="../UnitTest++/ReportAssert.h" />
+		<Unit filename="../UnitTest++/ReportAssertImpl.h" />
+		<Unit filename="../UnitTest++/RequireMacros.h" />
+		<Unit filename="../UnitTest++/RequiredCheckException.cpp" />
+		<Unit filename="../UnitTest++/RequiredCheckException.h" />
+		<Unit filename="../UnitTest++/RequiredCheckTestReporter.cpp" />
+		<Unit filename="../UnitTest++/RequiredCheckTestReporter.h" />
+		<Unit filename="../UnitTest++/Test.cpp" />
+		<Unit filename="../UnitTest++/Test.h" />
+		<Unit filename="../UnitTest++/TestDetails.cpp" />
+		<Unit filename="../UnitTest++/TestDetails.h" />
+		<Unit filename="../UnitTest++/TestList.cpp" />
+		<Unit filename="../UnitTest++/TestList.h" />
+		<Unit filename="../UnitTest++/TestMacros.h" />
+		<Unit filename="../UnitTest++/TestReporter.cpp" />
+		<Unit filename="../UnitTest++/TestReporter.h" />
+		<Unit filename="../UnitTest++/TestReporterStdout.cpp" />
+		<Unit filename="../UnitTest++/TestReporterStdout.h" />
+		<Unit filename="../UnitTest++/TestResults.cpp" />
+		<Unit filename="../UnitTest++/TestResults.h" />
+		<Unit filename="../UnitTest++/TestRunner.cpp" />
+		<Unit filename="../UnitTest++/TestRunner.h" />
+		<Unit filename="../UnitTest++/TestSuite.h" />
+		<Unit filename="../UnitTest++/ThrowingTestReporter.cpp" />
+		<Unit filename="../UnitTest++/ThrowingTestReporter.h" />
+		<Unit filename="../UnitTest++/TimeConstraint.cpp" />
+		<Unit filename="../UnitTest++/TimeConstraint.h" />
+		<Unit filename="../UnitTest++/TimeHelpers.h" />
+		<Unit filename="../UnitTest++/UnitTest++.h" />
+		<Unit filename="../UnitTest++/UnitTestPP.h" />
+		<Unit filename="../UnitTest++/Win32/TimeHelpers.cpp" />
+		<Unit filename="../UnitTest++/Win32/TimeHelpers.h" />
+		<Unit filename="../UnitTest++/XmlTestReporter.cpp" />
+		<Unit filename="../UnitTest++/XmlTestReporter.h" />
+		<Unit filename="Kepler.cpp" />
+		<Unit filename="Kepler.h" />
+		<Unit filename="Test.cpp" />
+		<Unit filename="ephemerids.cpp" />
+		<Unit filename="ephemerids.h" />
+		<Unit filename="funct.cpp" />
+		<Unit filename="funct.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
