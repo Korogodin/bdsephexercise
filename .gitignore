@@ -27,3 +27,5 @@ simulation/DetermSatPosition/objs/UnitTest++/ThrowingTestReporter.o
 simulation/DetermSatPosition/objs/UnitTest++/TimeConstraint.o
 simulation/DetermSatPosition/objs/UnitTest++/Win32/TimeHelpers.o
 simulation/DetermSatPosition/objs/UnitTest++/XmlTestReporter.o
+*.o
+*.depend

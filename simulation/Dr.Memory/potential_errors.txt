@@ -1,0 +1,101 @@
+Dr. Memory version 2.3.0 build 1 built on Feb  6 2020 06:07:09
+Dr. Memory errors that are likely to be false positives, for pid 2720: "LP2.exe"
+These errors matched the blacklist 'C:\WINDOWS*.d??' for 4 frames.
+Run with -lib_blacklist_frames 0 to treat these as regular errors.
+If these are all false positives and your focus is unaddressable errors, consider running with -light to skip all uninitialized reads and leaks for higher performance.
+
+Potential Error #1: UNINITIALIZED READ: reading 0x000000000081deb0-0x000000000081df10 96 byte(s) within 0x000000000081de10-0x000000000081e010
+# 0 ntdll.dll!RcContinueExit
+# 1 ntdll.dll!RtlUnwindEx
+# 2 msvcrt.dll!invoke_watson
+# 3 KERNELBASE.dll!_GSHandlerCheck_SEH
+# 4 ntdll.dll!RtlpExecuteHandlerForException
+# 5 ntdll.dll!RtlDispatchException
+# 6 msvcrt.dll!invoke_watson
+# 7 msvcrt.dll!invoke_watson
+# 8 msvcrt.dll!invoke_watson
+# 9 KERNELBASE.dll!RaiseException
+#10 KERNELBASE.dll!RaiseException
+#11 msvcrt.dll!invoke_watson
+#12 KERNELBASE.dll!RaiseException
+#13 KERNELBASE.dll!OutputDebugStringA
+#14 msvcrt.dll!invoke_watson
+#15 msvcrt.dll!invoke_watson
+#16 msvcrt.dll!invoke_watson
+#17 msvcrt.dll!feof      
+#18 msvcrt.dll!errno     
+#19 msvcrt.dll!_tsopen_nolock
+Note: @0:00:00.566 in thread 2380
+Note: instruction: fxrstor 0x00000100(%rcx)
+
+Potential Error #2: UNINITIALIZED READ: reading 0x000000000081dc7a-0x000000000081dc80 6 byte(s) within 0x000000000081dc70-0x000000000081dc98
+# 0 ntdll.dll!RcContinueExit
+# 1 ntdll.dll!RtlUnwindEx
+# 2 msvcrt.dll!invoke_watson
+# 3 KERNELBASE.dll!_GSHandlerCheck_SEH
+# 4 ntdll.dll!RtlpExecuteHandlerForException
+# 5 ntdll.dll!RtlDispatchException
+# 6 msvcrt.dll!invoke_watson
+# 7 msvcrt.dll!invoke_watson
+# 8 msvcrt.dll!invoke_watson
+# 9 KERNELBASE.dll!RaiseException
+#10 KERNELBASE.dll!RaiseException
+#11 msvcrt.dll!invoke_watson
+#12 KERNELBASE.dll!RaiseException
+#13 KERNELBASE.dll!OutputDebugStringA
+#14 msvcrt.dll!invoke_watson
+#15 msvcrt.dll!invoke_watson
+#16 msvcrt.dll!invoke_watson
+#17 msvcrt.dll!feof      
+#18 msvcrt.dll!errno     
+#19 msvcrt.dll!_tsopen_nolock
+Note: @0:00:00.568 in thread 2380
+Note: instruction: iret   %rsp (%rsp) -> %rsp
+
+Potential Error #3: UNINITIALIZED READ: reading 0x000000000081deb0-0x000000000081df10 96 byte(s) within 0x000000000081de10-0x000000000081e010
+# 0 ntdll.dll!RcContinueExit
+# 1 ntdll.dll!RtlUnwindEx
+# 2 msvcrt.dll!invoke_watson
+# 3 KERNELBASE.dll!_GSHandlerCheck_SEH
+# 4 ntdll.dll!RtlpExecuteHandlerForException
+# 5 ntdll.dll!RtlDispatchException
+# 6 msvcrt.dll!invoke_watson
+# 7 msvcrt.dll!invoke_watson
+# 8 msvcrt.dll!invoke_watson
+# 9 KERNELBASE.dll!RaiseException
+#10 KERNELBASE.dll!RaiseException
+#11 msvcrt.dll!invoke_watson
+#12 KERNELBASE.dll!RaiseException
+#13 KERNELBASE.dll!OutputDebugStringA
+#14 msvcrt.dll!invoke_watson
+#15 msvcrt.dll!invoke_watson
+#16 msvcrt.dll!invoke_watson
+#17 msvcrt.dll!feof      
+#18 msvcrt.dll!feof      
+#19 parser                                       [D:/my/bdsephexercise/simulation/DetermSatPosition/funct.cpp:82]
+Note: @0:00:00.619 in thread 2380
+Note: instruction: fxrstor 0x00000100(%rcx)
+
+Potential Error #4: UNINITIALIZED READ: reading 0x000000000081dc7a-0x000000000081dc80 6 byte(s) within 0x000000000081dc70-0x000000000081dc98
+# 0 ntdll.dll!RcContinueExit
+# 1 ntdll.dll!RtlUnwindEx
+# 2 msvcrt.dll!invoke_watson
+# 3 KERNELBASE.dll!_GSHandlerCheck_SEH
+# 4 ntdll.dll!RtlpExecuteHandlerForException
+# 5 ntdll.dll!RtlDispatchException
+# 6 msvcrt.dll!invoke_watson
+# 7 msvcrt.dll!invoke_watson
+# 8 msvcrt.dll!invoke_watson
+# 9 KERNELBASE.dll!RaiseException
+#10 KERNELBASE.dll!RaiseException
+#11 msvcrt.dll!invoke_watson
+#12 KERNELBASE.dll!RaiseException
+#13 KERNELBASE.dll!OutputDebugStringA
+#14 msvcrt.dll!invoke_watson
+#15 msvcrt.dll!invoke_watson
+#16 msvcrt.dll!invoke_watson
+#17 msvcrt.dll!feof      
+#18 msvcrt.dll!feof      
+#19 parser                                       [D:/my/bdsephexercise/simulation/DetermSatPosition/funct.cpp:82]
+Note: @0:00:00.620 in thread 2380
+Note: instruction: iret   %rsp (%rsp) -> %rsp

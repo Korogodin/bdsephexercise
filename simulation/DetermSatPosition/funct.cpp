@@ -86,7 +86,6 @@ void parser(double *Xmatlab,double *Ymatlab,double *Zmatlab )
     fscanf(fd, "%lf", &( Zmatlab[i]));
     i++;
   }
-
 }
 void comparr(double* X, double* Y, double* Z,double* X2, double* Y2, double* Z2, double nnn, double *srdx, double *srdy, double *srdz,
              double *dxmax, double *dymax,double *dzmax)
@@ -127,8 +126,8 @@ void comparr(double* X, double* Y, double* Z,double* X2, double* Y2, double* Z2,
   *srdx = sumdx/nnn;
   *srdy = sumdy/nnn;
   *srdz = sumdz/nnn;
-  delete[] dx;
-  delete[] dy;
+  delete[] dx; //допустим ошибку
+ delete[] dy;
   delete[] dz;
 
 }

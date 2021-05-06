@@ -1,0 +1,178 @@
+Dr. Memory version 2.3.0 build 1 built on Feb  6 2020 06:07:09
+start time: 3684663:56:27.994 == 15:56:27.995 05/06/2021
+Recorded 118 suppression(s) from default C:\Program Files (x86)\Dr. Memory\bin64\suppress-default.txt
+Using system call file C:\Users\Tvvve\AppData\Roaming\Dr. Memory\symcache\syscalls_x64.txt
+Syscall mismatch detected.  Running on unknown kernel version!
+WARNING: duplicate entry added to name2num_table: WOWCLEANUP
+new thread #0 id=2380
+
+module load event: "LP2.exe" 0x0000000000400000-0x000000000061f000 modid: 1 D:\my\bdsephexercise\simulation\DetermSatPosition\LP2.exe
+
+module load event: "drmemorylib.dll" 0x000000006bea0000-0x000000006c13c000 modid: 2 C:\Program Files (x86)\Dr. Memory\bin64\release\drmemorylib.dll
+
+module load event: "libopenblas.dll" 0x000000006d7c0000-0x000000006f308000 modid: 3 D:\my\bdsephexercise\simulation\DetermSatPosition\libopenblas.dll
+
+module load event: "dynamorio.dll" 0x0000000071000000-0x00000000711b1000 modid: 4 C:\Program Files (x86)\Dr. Memory\dynamorio\lib64\release\dynamorio.dll
+
+module load event: "gdi32full.dll" 0x00007fffad6a0000-0x00007fffad7ab000 modid: 5 C:\WINDOWS\System32\gdi32full.dll
+
+module load event: "win32u.dll" 0x00007fffad7b0000-0x00007fffad7d2000 modid: 6 C:\WINDOWS\System32\win32u.dll
+
+module load event: "KERNELBASE.dll" 0x00007fffad7e0000-0x00007fffadaa8000 modid: 7 C:\WINDOWS\System32\KERNELBASE.dll
+
+module load event: "ucrtbase.dll" 0x00007fffadb40000-0x00007fffadc40000 modid: 8 C:\WINDOWS\System32\ucrtbase.dll
+
+module load event: "msvcp_win.dll" 0x00007fffaddf0000-0x00007fffade8d000 modid: 9 C:\WINDOWS\System32\msvcp_win.dll
+
+module load event: "msvcrt.dll" 0x00007fffae390000-0x00007fffae42e000 modid: 10 C:\WINDOWS\System32\msvcrt.dll
+WARNING: new/delete has no local wrapper => disabling mismatch detection for msvcrt.dll
+WARNING: new/delete has no local wrapper => disabling mismatch detection for msvcrt.dll
+WARNING: new == new[] => disabling mismatch detection for msvcrt.dll
+WARNING: new/delete has no local wrapper => disabling mismatch detection for msvcrt.dll
+
+module load event: "KERNEL32.dll" 0x00007fffaf4c0000-0x00007fffaf57d000 modid: 11 C:\WINDOWS\System32\KERNEL32.DLL
+
+module load event: "IMM32.dll" 0x00007fffaf940000-0x00007fffaf970000 modid: 12 C:\WINDOWS\System32\IMM32.DLL
+
+module load event: "USER32.dll" 0x00007fffafb40000-0x00007fffafce0000 modid: 13 C:\WINDOWS\System32\USER32.dll
+WARNING: error finding UserConnectToServer syscall #
+module load event: "GDI32.dll" 0x00007fffafd90000-0x00007fffafdba000 modid: 14 C:\WINDOWS\System32\GDI32.dll
+
+module load event: "ntdll.dll" 0x00007fffafeb0000-0x00007fffb00a5000 modid: 15 C:\WINDOWS\SYSTEM32\ntdll.dll
+WARNING: fail to find call to RtlFreeStringRoutine
+WARNING: fail to find call to RtlFreeStringRoutine
+WARNING: fail to find call to RtlFreeStringRoutine
+
+NEW THREAD: main thread 2380
+
+
+Error #1: UNADDRESSABLE ACCESS beyond top of stack: reading 0x000000000081fbd0-0x000000000081fbd8 8 byte(s)
+# 0 .text   [../../../../../src/gcc-6.4.0/libgcc/config/i386/cygwin.S:152] (0x00000000004129eb <LP2.exe+0x129eb>) modid:1
+# 1 _pei386_runtime_relocator [D:/my/bdsephexercise/simulation/UnitTest++/AssertException.cpp:11] (0x0000000000411c19 <LP2.exe+0x11c19>) modid:1
+# 2 __tmainCRTStartup [D:/NNIR/CodeBlocksMingwOpenblasArmadilloWxwidgets/CodeBlocks/mingw64/lib/gcc/x86_64-w64-mingw32/6.4.0/include/c++/bits/stl_vector.h:161] (0x000000000040127c <LP2.exe+0x127c>) modid:1
+# 3 .l_start [D:/NNIR/CodeBlocksMingwOpenblasArmadilloWxwidgets/CodeBlocks/mingw64/lib/gcc/x86_64-w64-mingw32/6.4.0/include/c++/bits/stl_vector.h:161] (0x000000000040151b <LP2.exe+0x151b>) modid:1
+# 4 KERNEL32.dll!BaseThreadInitThunk (0x00007fffaf4d7034 <KERNEL32.dll+0x17034>) modid:11
+Note: @0:00:00.248 in thread 2380
+Note: 0x000000000081fbd0 refers to 408 byte(s) beyond the top of the stack 0x000000000081fd68
+Note: instruction: or     $0x0000000000000000 (%rcx) -> (%rcx)
+	error end
+
+Potential Error #1: UNINITIALIZED READ: reading 0x000000000081deb0-0x000000000081df10 96 byte(s) within 0x000000000081de10-0x000000000081e010
+# 0 ntdll.dll!RcContinueExit (0x00007fffaff51250 <ntdll.dll+0xa1250>) modid:15
+# 1 ntdll.dll!RtlUnwindEx (0x00007fffafee0b66 <ntdll.dll+0x30b66>) modid:15
+# 2 msvcrt.dll!invoke_watson (0x00007fffae3bbc22 <msvcrt.dll+0x2bc22>) modid:10
+# 3 KERNELBASE.dll!_GSHandlerCheck_SEH (0x00007fffad871ca2 <KERNELBASE.dll+0x91ca2>) modid:7
+# 4 ntdll.dll!RtlpExecuteHandlerForException (0x00007fffaff5207f <ntdll.dll+0xa207f>) modid:15
+# 5 ntdll.dll!RtlDispatchException (0x00007fffaff01454 <ntdll.dll+0x51454>) modid:15
+# 6 msvcrt.dll!invoke_watson (0x00007fffae3bbc22 <msvcrt.dll+0x2bc22>) modid:10
+# 7 msvcrt.dll!invoke_watson (0x00007fffae3bbca6 <msvcrt.dll+0x2bca6>) modid:10
+# 8 msvcrt.dll!invoke_watson (0x00007fffae3bbc22 <msvcrt.dll+0x2bc22>) modid:10
+# 9 KERNELBASE.dll!RaiseException (0x00007fffad814b59 <KERNELBASE.dll+0x34b59>) modid:7
+#10 KERNELBASE.dll!RaiseException (0x00007fffad814b59 <KERNELBASE.dll+0x34b59>) modid:7
+#11 msvcrt.dll!invoke_watson (0x00007fffae3bbc22 <msvcrt.dll+0x2bc22>) modid:10
+#12 KERNELBASE.dll!RaiseException (0x00007fffad814b59 <KERNELBASE.dll+0x34b59>) modid:7
+#13 KERNELBASE.dll!OutputDebugStringA (0x00007fffad813afa <KERNELBASE.dll+0x33afa>) modid:7
+#14 msvcrt.dll!invoke_watson (0x00007fffae3bbca6 <msvcrt.dll+0x2bca6>) modid:10
+#15 msvcrt.dll!invoke_watson (0x00007fffae3bbc22 <msvcrt.dll+0x2bc22>) modid:10
+#16 msvcrt.dll!invoke_watson (0x00007fffae3bbc22 <msvcrt.dll+0x2bc22>) modid:10
+#17 msvcrt.dll!feof       (0x00007fffae3dcab9 <msvcrt.dll+0x4cab9>) modid:10
+#18 msvcrt.dll!errno      (0x00007fffae397d69 <msvcrt.dll+0x7d69>) modid:10
+#19 msvcrt.dll!_tsopen_nolock (0x00007fffae3adbb9 <msvcrt.dll+0x1dbb9>) modid:10
+Note: @0:00:00.567 in thread 2380
+Note: instruction: fxrstor 0x00000100(%rcx)
+	error end
+
+Potential Error #2: UNINITIALIZED READ: reading 0x000000000081dc7a-0x000000000081dc80 6 byte(s) within 0x000000000081dc70-0x000000000081dc98
+# 0 ntdll.dll!RcContinueExit (0x00007fffaff51369 <ntdll.dll+0xa1369>) modid:15
+# 1 ntdll.dll!RtlUnwindEx (0x00007fffafee0b66 <ntdll.dll+0x30b66>) modid:15
+# 2 msvcrt.dll!invoke_watson (0x00007fffae3bbc22 <msvcrt.dll+0x2bc22>) modid:10
+# 3 KERNELBASE.dll!_GSHandlerCheck_SEH (0x00007fffad871ca2 <KERNELBASE.dll+0x91ca2>) modid:7
+# 4 ntdll.dll!RtlpExecuteHandlerForException (0x00007fffaff5207f <ntdll.dll+0xa207f>) modid:15
+# 5 ntdll.dll!RtlDispatchException (0x00007fffaff01454 <ntdll.dll+0x51454>) modid:15
+# 6 msvcrt.dll!invoke_watson (0x00007fffae3bbc22 <msvcrt.dll+0x2bc22>) modid:10
+# 7 msvcrt.dll!invoke_watson (0x00007fffae3bbca6 <msvcrt.dll+0x2bca6>) modid:10
+# 8 msvcrt.dll!invoke_watson (0x00007fffae3bbc22 <msvcrt.dll+0x2bc22>) modid:10
+# 9 KERNELBASE.dll!RaiseException (0x00007fffad814b59 <KERNELBASE.dll+0x34b59>) modid:7
+#10 KERNELBASE.dll!RaiseException (0x00007fffad814b59 <KERNELBASE.dll+0x34b59>) modid:7
+#11 msvcrt.dll!invoke_watson (0x00007fffae3bbc22 <msvcrt.dll+0x2bc22>) modid:10
+#12 KERNELBASE.dll!RaiseException (0x00007fffad814b59 <KERNELBASE.dll+0x34b59>) modid:7
+#13 KERNELBASE.dll!OutputDebugStringA (0x00007fffad813afa <KERNELBASE.dll+0x33afa>) modid:7
+#14 msvcrt.dll!invoke_watson (0x00007fffae3bbca6 <msvcrt.dll+0x2bca6>) modid:10
+#15 msvcrt.dll!invoke_watson (0x00007fffae3bbc22 <msvcrt.dll+0x2bc22>) modid:10
+#16 msvcrt.dll!invoke_watson (0x00007fffae3bbc22 <msvcrt.dll+0x2bc22>) modid:10
+#17 msvcrt.dll!feof       (0x00007fffae3dcab9 <msvcrt.dll+0x4cab9>) modid:10
+#18 msvcrt.dll!errno      (0x00007fffae397d69 <msvcrt.dll+0x7d69>) modid:10
+#19 msvcrt.dll!_tsopen_nolock (0x00007fffae3adbb9 <msvcrt.dll+0x1dbb9>) modid:10
+Note: @0:00:00.568 in thread 2380
+Note: instruction: iret   %rsp (%rsp) -> %rsp
+	error end
+
+Error #2: UNADDRESSABLE ACCESS beyond top of stack: reading 0x000000000081ec88-0x000000000081ec90 8 byte(s)
+# 0 .text   [../../../../../src/gcc-6.4.0/libgcc/config/i386/cygwin.S:146] (0x00000000004129d6 <LP2.exe+0x129d6>) modid:1
+# 1 __mingw_vfscanf [D:/my/bdsephexercise/simulation/UnitTest++/AssertException.cpp:11] (0x00000000004182ee <LP2.exe+0x182ee>) modid:1
+# 2 fscanf  [D:/NNIR/CodeBlocksMingwOpenblasArmadilloWxwidgets/CodeBlocks/mingw64/x86_64-w64-mingw32/include/stdio.h:253] (0x000000000042757d <LP2.exe+0x2757d>) modid:1
+# 3 main    [D:/my/bdsephexercise/simulation/DetermSatPosition/main.cpp:20] (0x000000000040743f <LP2.exe+0x743f>) modid:1
+Note: @0:00:00.612 in thread 2380
+Note: 0x000000000081ec88 refers to 4072 byte(s) beyond the top of the stack 0x000000000081fc70
+Note: instruction: or     $0x0000000000000000 (%rcx) -> (%rcx)
+	error end
+
+Error #3: UNADDRESSABLE ACCESS beyond top of stack: reading 0x000000000081ec40-0x000000000081ec48 8 byte(s)
+# 0 .text   [../../../../../src/gcc-6.4.0/libgcc/config/i386/cygwin.S:152] (0x00000000004129eb <LP2.exe+0x129eb>) modid:1
+# 1 __mingw_vfscanf [D:/my/bdsephexercise/simulation/UnitTest++/AssertException.cpp:11] (0x00000000004182ee <LP2.exe+0x182ee>) modid:1
+# 2 fscanf  [D:/NNIR/CodeBlocksMingwOpenblasArmadilloWxwidgets/CodeBlocks/mingw64/x86_64-w64-mingw32/include/stdio.h:253] (0x000000000042757d <LP2.exe+0x2757d>) modid:1
+# 3 main    [D:/my/bdsephexercise/simulation/DetermSatPosition/main.cpp:20] (0x000000000040743f <LP2.exe+0x743f>) modid:1
+Note: @0:00:00.613 in thread 2380
+Note: 0x000000000081ec40 refers to 4144 byte(s) beyond the top of the stack 0x000000000081fc70
+Note: instruction: or     $0x0000000000000000 (%rcx) -> (%rcx)
+	error end
+
+Potential Error #3: UNINITIALIZED READ: reading 0x000000000081deb0-0x000000000081df10 96 byte(s) within 0x000000000081de10-0x000000000081e010
+# 0 ntdll.dll!RcContinueExit (0x00007fffaff51250 <ntdll.dll+0xa1250>) modid:15
+# 1 ntdll.dll!RtlUnwindEx (0x00007fffafee0b66 <ntdll.dll+0x30b66>) modid:15
+# 2 msvcrt.dll!invoke_watson (0x00007fffae3bbc22 <msvcrt.dll+0x2bc22>) modid:10
+# 3 KERNELBASE.dll!_GSHandlerCheck_SEH (0x00007fffad871ca2 <KERNELBASE.dll+0x91ca2>) modid:7
+# 4 ntdll.dll!RtlpExecuteHandlerForException (0x00007fffaff5207f <ntdll.dll+0xa207f>) modid:15
+# 5 ntdll.dll!RtlDispatchException (0x00007fffaff01454 <ntdll.dll+0x51454>) modid:15
+# 6 msvcrt.dll!invoke_watson (0x00007fffae3bbc22 <msvcrt.dll+0x2bc22>) modid:10
+# 7 msvcrt.dll!invoke_watson (0x00007fffae3bbca6 <msvcrt.dll+0x2bca6>) modid:10
+# 8 msvcrt.dll!invoke_watson (0x00007fffae3bbc22 <msvcrt.dll+0x2bc22>) modid:10
+# 9 KERNELBASE.dll!RaiseException (0x00007fffad814b59 <KERNELBASE.dll+0x34b59>) modid:7
+#10 KERNELBASE.dll!RaiseException (0x00007fffad814b59 <KERNELBASE.dll+0x34b59>) modid:7
+#11 msvcrt.dll!invoke_watson (0x00007fffae3bbc22 <msvcrt.dll+0x2bc22>) modid:10
+#12 KERNELBASE.dll!RaiseException (0x00007fffad814b59 <KERNELBASE.dll+0x34b59>) modid:7
+#13 KERNELBASE.dll!OutputDebugStringA (0x00007fffad813afa <KERNELBASE.dll+0x33afa>) modid:7
+#14 msvcrt.dll!invoke_watson (0x00007fffae3bbca6 <msvcrt.dll+0x2bca6>) modid:10
+#15 msvcrt.dll!invoke_watson (0x00007fffae3bbc22 <msvcrt.dll+0x2bc22>) modid:10
+#16 msvcrt.dll!invoke_watson (0x00007fffae3bbc22 <msvcrt.dll+0x2bc22>) modid:10
+#17 msvcrt.dll!feof       (0x00007fffae3dcab9 <msvcrt.dll+0x4cab9>) modid:10
+#18 msvcrt.dll!feof       (0x00007fffae3dcab9 <msvcrt.dll+0x4cab9>) modid:10
+#19 parser  [D:/my/bdsephexercise/simulation/DetermSatPosition/funct.cpp:82] (0x0000000000406668 <LP2.exe+0x6668>) modid:1
+Note: @0:00:00.619 in thread 2380
+Note: instruction: fxrstor 0x00000100(%rcx)
+	error end
+
+Potential Error #4: UNINITIALIZED READ: reading 0x000000000081dc7a-0x000000000081dc80 6 byte(s) within 0x000000000081dc70-0x000000000081dc98
+# 0 ntdll.dll!RcContinueExit (0x00007fffaff51369 <ntdll.dll+0xa1369>) modid:15
+# 1 ntdll.dll!RtlUnwindEx (0x00007fffafee0b66 <ntdll.dll+0x30b66>) modid:15
+# 2 msvcrt.dll!invoke_watson (0x00007fffae3bbc22 <msvcrt.dll+0x2bc22>) modid:10
+# 3 KERNELBASE.dll!_GSHandlerCheck_SEH (0x00007fffad871ca2 <KERNELBASE.dll+0x91ca2>) modid:7
+# 4 ntdll.dll!RtlpExecuteHandlerForException (0x00007fffaff5207f <ntdll.dll+0xa207f>) modid:15
+# 5 ntdll.dll!RtlDispatchException (0x00007fffaff01454 <ntdll.dll+0x51454>) modid:15
+# 6 msvcrt.dll!invoke_watson (0x00007fffae3bbc22 <msvcrt.dll+0x2bc22>) modid:10
+# 7 msvcrt.dll!invoke_watson (0x00007fffae3bbca6 <msvcrt.dll+0x2bca6>) modid:10
+# 8 msvcrt.dll!invoke_watson (0x00007fffae3bbc22 <msvcrt.dll+0x2bc22>) modid:10
+# 9 KERNELBASE.dll!RaiseException (0x00007fffad814b59 <KERNELBASE.dll+0x34b59>) modid:7
+#10 KERNELBASE.dll!RaiseException (0x00007fffad814b59 <KERNELBASE.dll+0x34b59>) modid:7
+#11 msvcrt.dll!invoke_watson (0x00007fffae3bbc22 <msvcrt.dll+0x2bc22>) modid:10
+#12 KERNELBASE.dll!RaiseException (0x00007fffad814b59 <KERNELBASE.dll+0x34b59>) modid:7
+#13 KERNELBASE.dll!OutputDebugStringA (0x00007fffad813afa <KERNELBASE.dll+0x33afa>) modid:7
+#14 msvcrt.dll!invoke_watson (0x00007fffae3bbca6 <msvcrt.dll+0x2bca6>) modid:10
+#15 msvcrt.dll!invoke_watson (0x00007fffae3bbc22 <msvcrt.dll+0x2bc22>) modid:10
+#16 msvcrt.dll!invoke_watson (0x00007fffae3bbc22 <msvcrt.dll+0x2bc22>) modid:10
+#17 msvcrt.dll!feof       (0x00007fffae3dcab9 <msvcrt.dll+0x4cab9>) modid:10
+#18 msvcrt.dll!feof       (0x00007fffae3dcab9 <msvcrt.dll+0x4cab9>) modid:10
+#19 parser  [D:/my/bdsephexercise/simulation/DetermSatPosition/funct.cpp:82] (0x0000000000406668 <LP2.exe+0x6668>) modid:1
+Note: @0:00:00.620 in thread 2380
+Note: instruction: iret   %rsp (%rsp) -> %rsp
+	error end

@@ -5,7 +5,8 @@
 #include <math.h>
 
 using namespace std;
-const int nn =432001; //задаем n для массив
+const int nn =432000; //задаем n для массив 43202
+
 int main()
 {
 
@@ -35,7 +36,7 @@ double dzmax = 0;
 //cout<<X[nn-10]<<"\t"<<Xmatlab[nn-10]<<endl;
 //printf("X=%12.12f , Xmatl =%12.12f ",X[nn-10],Xmatlab[nn-10]);
 comparr(X,Y,Z, Xmatlab,Ymatlab,Zmatlab,nn-10, &srdx,&srdy,&srdz, &dxmax,&dymax,&dzmax );
-delete[] X;
+delete[] X; //допустим ошибку
 delete[] Y;
 delete[] Z;
 delete[] Xmatlab;

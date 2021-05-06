@@ -1,0 +1,43 @@
+Dr. Memory version 2.3.0 build 1 built on Feb  6 2020 06:07:09
+Windows version: WinVer=105;Rel=2004;Build=19041;Edition=Core
+Dr. Memory results for pid 2720: "LP2.exe"
+Application cmdline: "D:\my\bdsephexercise\simulation\DetermSatPosition\LP2.exe"
+Recorded 118 suppression(s) from default C:\Program Files (x86)\Dr. Memory\bin64\suppress-default.txt
+
+Error #1: UNADDRESSABLE ACCESS beyond top of stack: reading 0x000000000081fbd0-0x000000000081fbd8 8 byte(s)
+# 0 .text                                   [../../../../../src/gcc-6.4.0/libgcc/config/i386/cygwin.S:152]
+# 1 _pei386_runtime_relocator               [D:/my/bdsephexercise/simulation/UnitTest++/AssertException.cpp:11]
+# 2 __tmainCRTStartup                       [D:/NNIR/CodeBlocksMingwOpenblasArmadilloWxwidgets/CodeBlocks/mingw64/lib/gcc/x86_64-w64-mingw32/6.4.0/include/c++/bits/stl_vector.h:161]
+# 3 .l_start                                [D:/NNIR/CodeBlocksMingwOpenblasArmadilloWxwidgets/CodeBlocks/mingw64/lib/gcc/x86_64-w64-mingw32/6.4.0/include/c++/bits/stl_vector.h:161]
+# 4 KERNEL32.dll!BaseThreadInitThunk
+Note: @0:00:00.248 in thread 2380
+Note: 0x000000000081fbd0 refers to 408 byte(s) beyond the top of the stack 0x000000000081fd68
+Note: instruction: or     $0x0000000000000000 (%rcx) -> (%rcx)
+
+Error #2: UNADDRESSABLE ACCESS beyond top of stack: reading 0x000000000081ec88-0x000000000081ec90 8 byte(s)
+# 0 .text                         [../../../../../src/gcc-6.4.0/libgcc/config/i386/cygwin.S:146]
+# 1 __mingw_vfscanf               [D:/my/bdsephexercise/simulation/UnitTest++/AssertException.cpp:11]
+# 2 fscanf                        [D:/NNIR/CodeBlocksMingwOpenblasArmadilloWxwidgets/CodeBlocks/mingw64/x86_64-w64-mingw32/include/stdio.h:253]
+# 3 main                          [D:/my/bdsephexercise/simulation/DetermSatPosition/main.cpp:20]
+Note: @0:00:00.612 in thread 2380
+Note: 0x000000000081ec88 refers to 4072 byte(s) beyond the top of the stack 0x000000000081fc70
+Note: instruction: or     $0x0000000000000000 (%rcx) -> (%rcx)
+
+Error #3: UNADDRESSABLE ACCESS beyond top of stack: reading 0x000000000081ec40-0x000000000081ec48 8 byte(s)
+# 0 .text                         [../../../../../src/gcc-6.4.0/libgcc/config/i386/cygwin.S:152]
+# 1 __mingw_vfscanf               [D:/my/bdsephexercise/simulation/UnitTest++/AssertException.cpp:11]
+# 2 fscanf                        [D:/NNIR/CodeBlocksMingwOpenblasArmadilloWxwidgets/CodeBlocks/mingw64/x86_64-w64-mingw32/include/stdio.h:253]
+# 3 main                          [D:/my/bdsephexercise/simulation/DetermSatPosition/main.cpp:20]
+Note: @0:00:00.612 in thread 2380
+Note: 0x000000000081ec40 refers to 4144 byte(s) beyond the top of the stack 0x000000000081fc70
+Note: instruction: or     $0x0000000000000000 (%rcx) -> (%rcx)
+<Application D:\my\bdsephexercise\simulation\DetermSatPosition\LP2.exe (11232).  Dr. Memory internal crash at PC 0x00000000710cbc4b.  Please report this at http://drmemory.org/issues along with the results of running '-debug -dr_debug'.  Program aborted.
+0xc0000005 0x00000000 0x00000000710cbc4b 0x00000000710cbc4b 0x0000000000000001 0x000000007118dcbc
+Base: 0x0000000071000000
+Registers: eax=0x0000000000000001 ebx=0x00000000810e9180 ecx=0xffffffffffffffff edx=0x0000000000000001
+        esi=0x000000008003ed70 edi=0x0000000000000000 esp=0x000000008003ec40 ebp=0x0000000000000000
+        r8 =0x0000000000000000 r9 =0x0000000000000000 r10=0x0000000000000000 r11=0x0000000000000246
+        r12=0x0000000000000001 r13=0x0000000000000000 r14=0x0000000000000000 r15=0x0000000000000000
+        eflags=0x0000000000010286
+2.3.0-1-(Feb  6 2020 06:07:09) WinVer=105;Rel=2004;Build=19041;Edition=Core
+-no_dynamic_options -disasm_mask 8 -logdir 'C:\Users\Tvvve\AppData\Roaming\Dr. Memory\dynamorio' -client_lib 'C:\Program Files (x86)\Dr. Memory\bin64\release\drmemorylib.dll;0;-logdir `C:\Users\Tvvve\AppData\Roaming\Dr. Memory` -symcache_dir `C:\Users\Tvvve\AppData\Roaming\Dr. Memory\symcache` -lib_blacklist `C:\WINDOWS*>

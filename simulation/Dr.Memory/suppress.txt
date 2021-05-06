@@ -1,0 +1,52 @@
+# File for suppressing errors found in pid 2720: "LP2.exe"
+
+# Suppression for Error #1
+UNADDRESSABLE ACCESS
+name=Error #1 (update to meaningful name)
+LP2.exe!.text
+LP2.exe!_pei386_runtime_relocator
+LP2.exe!__tmainCRTStartup
+LP2.exe!.l_start
+KERNEL32.dll!BaseThreadInitThunk
+
+## Mod+offs-style suppression for Error #1:
+UNADDRESSABLE ACCESS
+name=Error #1 (update to meaningful name)
+<LP2.exe+0x129eb>
+<LP2.exe+0x11c19>
+<LP2.exe+0x127c>
+<LP2.exe+0x151b>
+<KERNEL32.dll+0x17034>
+
+# Suppression for Error #2
+UNADDRESSABLE ACCESS
+name=Error #2 (update to meaningful name)
+LP2.exe!.text
+LP2.exe!__mingw_vfscanf
+LP2.exe!fscanf
+LP2.exe!main
+
+## Mod+offs-style suppression for Error #2:
+UNADDRESSABLE ACCESS
+name=Error #2 (update to meaningful name)
+<LP2.exe+0x129d6>
+<LP2.exe+0x182ee>
+<LP2.exe+0x2757d>
+<LP2.exe+0x743f>
+
+# Suppression for Error #3
+UNADDRESSABLE ACCESS
+name=Error #3 (update to meaningful name)
+LP2.exe!.text
+LP2.exe!__mingw_vfscanf
+LP2.exe!fscanf
+LP2.exe!main
+
+## Mod+offs-style suppression for Error #3:
+UNADDRESSABLE ACCESS
+name=Error #3 (update to meaningful name)
+<LP2.exe+0x129eb>
+<LP2.exe+0x182ee>
+<LP2.exe+0x2757d>
+<LP2.exe+0x743f>
+
