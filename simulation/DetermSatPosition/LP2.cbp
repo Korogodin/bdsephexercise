@@ -12,9 +12,11 @@
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
+					<Add option="-pg" />
 					<Add option="-g" />
 				</Compiler>
 				<Linker>
+					<Add option="-pg -lgmon" />
 					<Add option="-static-libstdc++" />
 					<Add option="-static-libgcc" />
 					<Add option="-static" />
@@ -38,11 +40,13 @@
 			</Target>
 		</Build>
 		<Compiler>
-			<Add option="-Wall" />
+			<Add option="-pg" />
+			<Add option="-g" />
 			<Add option="-fexceptions" />
 			<Add directory="../UnitTest++" />
 		</Compiler>
 		<Linker>
+			<Add option="-pg -lgmon" />
 			<Add option="-static-libstdc++" />
 			<Add option="-static-libgcc" />
 			<Add option="-static" />

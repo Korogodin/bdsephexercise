@@ -75,9 +75,11 @@ void simul(double *X,double *Y,double *Z)
 void parser(double *Xmatlab,double *Ymatlab,double *Zmatlab )
 {
 // cout<< "parser"<<endl;
-  FILE *fd;
+  /*FILE *fd;
   fd = fopen("cord.txt", "r");
-
+  if (fd == nullptr)
+  { throw runtime_error("файл не найден");
+  }
   int i=0;
   while ( !feof(fd) )
   {
@@ -85,7 +87,16 @@ void parser(double *Xmatlab,double *Ymatlab,double *Zmatlab )
     fscanf(fd, "%lf", &( Ymatlab[i]));
     fscanf(fd, "%lf", &( Zmatlab[i]));
     i++;
+  }*/
+  ifstream fin("cord.txt");
+  for (int i=0; i<=432000; i++)
+  {
+    fin >> Xmatlab[i];
+    fin >> Ymatlab[i];
+    fin >> Zmatlab[i];
   }
+
+
 }
 void comparr(double* X, double* Y, double* Z,double* X2, double* Y2, double* Z2, double nnn, double *srdx, double *srdy, double *srdz,
              double *dxmax, double *dymax,double *dzmax)
@@ -127,7 +138,7 @@ void comparr(double* X, double* Y, double* Z,double* X2, double* Y2, double* Z2,
   *srdy = sumdy/nnn;
   *srdz = sumdz/nnn;
   delete[] dx; //допустим ошибку
- delete[] dy;
+  delete[] dy;
   delete[] dz;
 
 }
