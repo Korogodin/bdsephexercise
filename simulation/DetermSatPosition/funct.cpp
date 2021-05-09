@@ -35,12 +35,12 @@ void simul(double *X,double *Y,double *Z)
   ofstream f;
   f.open("testCoord.txt");
   f<<"tstart"<<tstart<<endl;
-
+  Coordinates coord;
   int k=0;
   for ( long double i = tstart; i<=tstop; i+=0.1)
   {
 // printf("i%12.12lf \n  ",i);
-    Coordinates coord = CoordGPS( i,
+   coord  = CoordGPS( i,
                                   toe,
                                   M0,
                                   e,
@@ -88,15 +88,18 @@ void parser(double *Xmatlab,double *Ymatlab,double *Zmatlab )
     fscanf(fd, "%lf", &( Zmatlab[i]));
     i++;
   }*/
+  int i = 0;
   ifstream fin("cord.txt");
-  for (int i=0; i<=432000; i++)
+  if (!fin.is_open())
+  cout << "Файл не открылся!"<<endl;
+  else
   {
-    fin >> Xmatlab[i];
-    fin >> Ymatlab[i];
-    fin >> Zmatlab[i];
+  while (fin >> Xmatlab[i]>> Ymatlab[i]>> Zmatlab[i])
+  {
+  i++;
   }
-
-
+fin.close();
+  }
 }
 void comparr(double* X, double* Y, double* Z,double* X2, double* Y2, double* Z2, double nnn, double *srdx, double *srdy, double *srdz,
              double *dxmax, double *dymax,double *dzmax)
