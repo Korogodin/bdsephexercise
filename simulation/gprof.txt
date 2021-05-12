@@ -1,0 +1,785 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 10.00      0.13     0.13                             __cosl_internal
+  9.23      0.25     0.12                             _mcount_private
+  7.69      0.35     0.10                             __sinl_internal
+  6.92      0.44     0.09                             __powi
+  6.15      0.52     0.08                             __strtodg
+  5.38      0.59     0.07                             __quorem_D2A
+  3.85      0.64     0.05                             __multadd_D2A
+  3.08      0.68     0.04                             std::__convert_from_v(int* const&, char*, int, char const*, ...)
+  3.08      0.72     0.04                             __Balloc_D2A
+  3.08      0.76     0.04                             __fentry__
+  3.08      0.80     0.04                             __lshift_D2A
+  2.31      0.83     0.03                             cos
+  1.54      0.85     0.02                             std::istreambuf_iterator<char, std::char_traits<char> >::_M_get() const
+  1.54      0.87     0.02                             std::ctype<char>::widen(char const*, char const*, char*) const
+  1.54      0.89     0.02                             std::ostream& std::ostream::_M_insert<double>(double)
+  1.54      0.91     0.02                             std::string::push_back(char)
+  1.54      0.93     0.02                             std::basic_streambuf<char, std::char_traits<char> >::xsputn(char const*, long long)
+  1.54      0.95     0.02                             __cmp_D2A
+  1.54      0.97     0.02                             __hexnan_D2A
+  1.54      0.99     0.02                             __sum_D2A
+  1.54      1.01     0.02                             btowc
+  1.54      1.03     0.02                             mbrtowc
+  1.54      1.05     0.02                             sin
+  0.77      1.06     0.01  1296003     0.00     0.00  void arma::glue_times::apply<double, false, false, false, arma::Mat<double>, arma::Mat<double> >(arma::Mat<double>&, arma::Mat<double> const&, arma::Mat<double> const&, double)
+  0.77      1.07     0.01  1296003     0.00     0.00  arma::Mat<double>::set_size(unsigned long long, unsigned long long)
+  0.77      1.08     0.01  1296003     0.00     0.00  arma::Mat<double>::init_warm(unsigned long long, unsigned long long)
+  0.77      1.09     0.01   432001     0.00     0.00  arma::Base_trans_default<arma::Glue<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> >::Base_trans_default()
+  0.77      1.10     0.01                             std::__use_cache<std::__numpunct_cache<char> >::operator()(std::locale const&) const
+  0.77      1.11     0.01                             std::__basic_file<char>::is_open() const
+  0.77      1.12     0.01                             std::istreambuf_iterator<char, std::char_traits<char> >::equal(std::istreambuf_iterator<char, std::char_traits<char> > const&) const
+  0.77      1.13     0.01                             std::locale::id::_M_id() const
+  0.77      1.14     0.01                             std::num_get<char, std::istreambuf_iterator<char, std::char_traits<char> > >::do_get(std::istreambuf_iterator<char, std::char_traits<char> >, std::istreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, std::_Ios_Iostate&, double&) const
+  0.77      1.15     0.01                             std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_float<double>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, char, double) const
+  0.77      1.16     0.01                             std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_float<long double>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, char, long double) const
+  0.77      1.17     0.01                             std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, double) const
+  0.77      1.18     0.01                             std::istream::sentry::sentry(std::istream&, bool)
+  0.77      1.19     0.01                             std::ostream::sentry::sentry(std::ostream&)
+  0.77      1.20     0.01                             std::string::_Rep::_M_dispose(std::allocator<char> const&)
+  0.77      1.21     0.01                             std::locale::facet::_S_get_c_locale()
+  0.77      1.22     0.01                             std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long long)
+  0.77      1.23     0.01                             std::ctype<char> const& std::use_facet<std::ctype<char> >(std::locale const&)
+  0.77      1.24     0.01                             std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)
+  0.77      1.25     0.01                             operator delete(void*)
+  0.77      1.26     0.01                             __dynamic_cast
+  0.77      1.27     0.01                             __mingw_pformat
+  0.77      1.28     0.01                             __mingw_vsnprintf
+  0.77      1.29     0.01                             __ratio_D2A
+  0.77      1.30     0.01                             __s2b_D2A
+  0.00      1.30     0.00 14256033     0.00     0.00  void arma::arma_check<char [37]>(bool, char const (&) [37])
+  0.00      1.30     0.00  3024007     0.00     0.00  arma::Base_eval_Mat<double, arma::Mat<double> >::Base_eval_Mat()
+  0.00      1.30     0.00  3024007     0.00     0.00  arma::Base_extra_yes<double, arma::Mat<double> >::Base_extra_yes()
+  0.00      1.30     0.00  3024007     0.00     0.00  arma::Base_trans_default<arma::Mat<double> >::Base_trans_default()
+  0.00      1.30     0.00  3024007     0.00     0.00  arma::Mat<double>::~Mat()
+  0.00      1.30     0.00  3024007     0.00     0.00  arma::Base<double, arma::Mat<double> >::Base()
+  0.00      1.30     0.00  1728004     0.00     0.00  void arma::arma_check<char const*>(bool, char const* const&)
+  0.00      1.30     0.00  1728004     0.00     0.00  arma::partial_unwrap<arma::Mat<double> >::partial_unwrap(arma::Mat<double> const&)
+  0.00      1.30     0.00  1728004     0.00     0.00  arma::Mat<double>::init_cold()
+  0.00      1.30     0.00  1728004     0.00     0.00  arma::Mat<double>::Mat(unsigned long long, unsigned long long)
+  0.00      1.30     0.00  1296003     0.00     0.00  void arma::arma_check<char [74]>(bool, char const (&) [74])
+  0.00      1.30     0.00  1296003     0.00     0.00  void arma::arma_check<char*>(bool, char* const&)
+  0.00      1.30     0.00  1296003     0.00     0.00  void arma::gemv_emul_tinysq<false, false, false>::apply<double, arma::Mat<double> >(double*, arma::Mat<double> const&, double const*, double, double)
+  0.00      1.30     0.00  1296003     0.00     0.00  void arma::arma_assert_trans_mul_size<false, false>(unsigned long long, unsigned long long, unsigned long long, unsigned long long, char const*)
+  0.00      1.30     0.00  1296003     0.00     0.00  void arma::gemv<false, false, false>::apply_blas_type<double, arma::Mat<double> >(double*, arma::Mat<double> const&, double const*, double, double)
+  0.00      1.30     0.00   864002     0.00     0.00  arma::Mat<double>::Mat()
+  0.00      1.30     0.00   432002     0.00     0.00  kepler(double, double)
+  0.00      1.30     0.00   432002     0.00     0.00  __gnu_cxx::__enable_if<std::__is_integer<int>::__value, double>::__type std::sin<int>(int)
+  0.00      1.30     0.00   432001     0.00     0.00  CoordGPS(double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double)
+  0.00      1.30     0.00   432001     0.00     0.00  void arma::glue_times::apply<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double> >(arma::Mat<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>::elem_type>&, arma::Glue<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> const&)
+  0.00      1.30     0.00   432001     0.00     0.00  void arma::glue_times::apply<double, false, false, false, false, false, arma::Mat<double>, arma::Mat<double>, arma::Mat<double>, arma::Mat<double> >(arma::Mat<double>&, arma::Mat<double> const&, arma::Mat<double> const&, arma::Mat<double> const&, arma::Mat<double> const&, double)
+  0.00      1.30     0.00   432001     0.00     0.00  void arma::glue_times::apply<double, false, false, false, false, arma::Mat<double>, arma::Mat<double>, arma::Mat<double> >(arma::Mat<double>&, arma::Mat<double> const&, arma::Mat<double> const&, arma::Mat<double> const&, double)
+  0.00      1.30     0.00   432001     0.00     0.00  arma::Glue_traits<arma::Mat<double>, arma::Mat<double>, arma::glue_times, true>::Glue_traits()
+  0.00      1.30     0.00   432001     0.00     0.00  arma::Glue_traits<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times, true>::Glue_traits()
+  0.00      1.30     0.00   432001     0.00     0.00  arma::Glue_traits<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times, true>::Glue_traits()
+  0.00      1.30     0.00   432001     0.00     0.00  arma::Base_eval_expr<double, arma::Glue<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> >::Base_eval_expr()
+  0.00      1.30     0.00   432001     0.00     0.00  arma::Base_eval_expr<double, arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> >::Base_eval_expr()
+  0.00      1.30     0.00   432001     0.00     0.00  arma::Base_eval_expr<double, arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times> >::Base_eval_expr()
+  0.00      1.30     0.00   432001     0.00     0.00  arma::Base_extra_yes<double, arma::Glue<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> >::Base_extra_yes()
+  0.00      1.30     0.00   432001     0.00     0.00  arma::Base_extra_yes<double, arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> >::Base_extra_yes()
+  0.00      1.30     0.00   432001     0.00     0.00  arma::Base_extra_yes<double, arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times> >::Base_extra_yes()
+  0.00      1.30     0.00   432001     0.00     0.00  arma::Base_trans_default<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> >::Base_trans_default()
+  0.00      1.30     0.00   432001     0.00     0.00  arma::Base_trans_default<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times> >::Base_trans_default()
+  0.00      1.30     0.00   432001     0.00     0.00  void arma::glue_times_redirect<4ull>::apply<arma::Mat<double>, arma::Mat<double>, arma::Mat<double>, arma::Mat<double> >(arma::Mat<arma::Mat<double>::elem_type>&, arma::Glue<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> const&)
+  0.00      1.30     0.00   432001     0.00     0.00  arma::Mat<double>::Mat<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>(arma::Glue<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> const&)
+  0.00      1.30     0.00   432001     0.00     0.00  arma::Base<double, arma::Glue<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> >::Base()
+  0.00      1.30     0.00   432001     0.00     0.00  arma::Base<double, arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> >::Base()
+  0.00      1.30     0.00   432001     0.00     0.00  arma::Base<double, arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times> >::Base()
+  0.00      1.30     0.00        4     0.00     0.00  UnitTest::Timer::GetTime() const
+  0.00      1.30     0.00        2     0.00     0.00  printf(char const*, ...)
+  0.00      1.30     0.00        2     0.00     0.00  UnitTest::CurrentTest::Details()
+  0.00      1.30     0.00        2     0.00     0.00  UnitTest::CurrentTest::Results()
+  0.00      1.30     0.00        2     0.00     0.00  UnitTest::Timer::Start()
+  0.00      1.30     0.00        2     0.00     0.00  UnitTest::Timer::Timer()
+  0.00      1.30     0.00        2     0.00     0.00  UnitTest::TestResults::GetFailureCount() const
+  0.00      1.30     0.00        2     0.00     0.00  UnitTest::Timer::GetTimeInMs() const
+  0.00      1.30     0.00        2     0.00     0.00  __gnu_cxx::__promote_2<int, int, __gnu_cxx::__promote<int, std::__is_integer<int>::__value>::__type, __gnu_cxx::__promote<int, std::__is_integer<int>::__value>::__type>::__type std::pow<int, int>(int, int)
+  0.00      1.30     0.00        1     0.00    40.00  simul(double*, double*, double*)
+  0.00      1.30     0.00        1     0.00     0.00  parser(double*, double*, double*)
+  0.00      1.30     0.00        1     0.00     0.00  comparr(double*, double*, double*, double*, double*, double*, double, double*, double*, double*, double*, double*, double*)
+  0.00      1.30     0.00        1     0.00     0.00  void UnitTest::CheckEqual<double, double>(UnitTest::TestResults&, double const&, double const&, UnitTest::TestDetails const&)
+  0.00      1.30     0.00        1     0.00     0.00  UnitTest::TestRunner::TestRunner(UnitTest::TestReporter&)
+  0.00      1.30     0.00        1     0.00     0.00  UnitTest::TestRunner::~TestRunner()
+  0.00      1.30     0.00        1     0.00     0.00  void UnitTest::ExecuteTest<UnitTest::Test>(UnitTest::Test&, UnitTest::TestDetails const&, bool)
+  0.00      1.30     0.00        1     0.00     0.00  UnitTest::RunAllTests()
+  0.00      1.30     0.00        1     0.00     0.00  UnitTest::TestDetails::TestDetails(UnitTest::TestDetails const&, int)
+  0.00      1.30     0.00        1     0.00     0.00  UnitTest::TestResults::OnTestStart(UnitTest::TestDetails const&)
+  0.00      1.30     0.00        1     0.00     0.00  UnitTest::TestResults::OnTestFinish(UnitTest::TestDetails const&, float)
+  0.00      1.30     0.00        1     0.00     0.00  UnitTest::TestResults::TestResults(UnitTest::TestReporter*)
+  0.00      1.30     0.00        1     0.00     0.00  UnitTest::TestReporter::~TestReporter()
+  0.00      1.30     0.00        1     0.00     0.00  UnitTest::TestReporterStdout::ReportSummary(int, int, int, float)
+  0.00      1.30     0.00        1     0.00     0.00  UnitTest::TestReporterStdout::ReportTestStart(UnitTest::TestDetails const&)
+  0.00      1.30     0.00        1     0.00     0.00  UnitTest::TestReporterStdout::ReportTestFinish(UnitTest::TestDetails const&, float)
+  0.00      1.30     0.00        1     0.00     0.00  UnitTest::TestReporterStdout::~TestReporterStdout()
+  0.00      1.30     0.00        1     0.00     0.00  UnitTest::Test::GetTestList()
+  0.00      1.30     0.00        1     0.00     0.00  UnitTest::Test::Run()
+  0.00      1.30     0.00        1     0.00     0.00  int UnitTest::TestRunner::RunTestsIf<UnitTest::True>(UnitTest::TestList const&, char const*, UnitTest::True const&, int) const
+  0.00      1.30     0.00        1     0.00     0.00  UnitTest::TestRunner::IsTestInSuite(UnitTest::Test const*, char const*) const
+  0.00      1.30     0.00        1     0.00     0.00  UnitTest::TestRunner::Finish() const
+  0.00      1.30     0.00        1     0.00     0.00  UnitTest::TestRunner::RunTest(UnitTest::TestResults*, UnitTest::Test*, int) const
+  0.00      1.30     0.00        1     0.00     0.00  UnitTest::TestResults::GetTotalTestCount() const
+  0.00      1.30     0.00        1     0.00     0.00  UnitTest::TestResults::GetFailedTestCount() const
+  0.00      1.30     0.00        1     0.00     0.00  UnitTest::True::operator()(UnitTest::Test const*) const
+  0.00      1.30     0.00        1     0.00     0.00  UnitTest::TestList::GetHead() const
+  0.00      1.30     0.00        1     0.00     0.00  __gnu_cxx::__promote_2<double, int, __gnu_cxx::__promote<double, std::__is_integer<double>::__value>::__type, __gnu_cxx::__promote<int, std::__is_integer<int>::__value>::__type>::__type std::pow<double, int>(double, int)
+  0.00      1.30     0.00        1     0.00     0.00  std::operator|(std::_Ios_Openmode, std::_Ios_Openmode)
+  0.00      1.30     0.00        1     0.00    40.00  main
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2017 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 4 byte(s) for 0.77% of 1.30 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]     10.0    0.13    0.00                 __cosl_internal [1]
+-----------------------------------------------
+                                                 <spontaneous>
+[2]      9.2    0.12    0.00                 _mcount_private [2]
+-----------------------------------------------
+                                                 <spontaneous>
+[3]      7.7    0.10    0.00                 __sinl_internal [3]
+-----------------------------------------------
+                                                 <spontaneous>
+[4]      6.9    0.09    0.00                 __powi [4]
+-----------------------------------------------
+                                                 <spontaneous>
+[5]      6.2    0.08    0.00                 __strtodg [5]
+-----------------------------------------------
+                                                 <spontaneous>
+[6]      5.4    0.07    0.00                 __quorem_D2A [6]
+-----------------------------------------------
+                                                 <spontaneous>
+[7]      3.8    0.05    0.00                 __multadd_D2A [7]
+-----------------------------------------------
+                                   1             void UnitTest::ExecuteTest<UnitTest::Test>(UnitTest::Test&, UnitTest::TestDetails const&, bool) <cycle 1> [364]
+[9]      3.1    0.00    0.04       1         main <cycle 1> [9]
+                0.00    0.04       1/1           simul(double*, double*, double*) [11]
+                0.00    0.00       1/1           parser(double*, double*, double*) [359]
+                0.00    0.00       1/1           comparr(double*, double*, double*, double*, double*, double*, double, double*, double*, double*, double*, double*, double*) [360]
+                0.00    0.00       1/432002      kepler(double, double) [335]
+                0.00    0.00       1/2           UnitTest::CurrentTest::Details() [352]
+                0.00    0.00       1/1           UnitTest::TestDetails::TestDetails(UnitTest::TestDetails const&, int) [366]
+                0.00    0.00       1/2           UnitTest::CurrentTest::Results() [353]
+                0.00    0.00       1/1           void UnitTest::CheckEqual<double, double>(UnitTest::TestResults&, double const&, double const&, UnitTest::TestDetails const&) [361]
+                                   1             UnitTest::RunAllTests() <cycle 1> [365]
+-----------------------------------------------
+                0.00    0.04  432001/432001      simul(double*, double*, double*) [11]
+[10]     3.1    0.00    0.04  432001         CoordGPS(double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double) [10]
+                0.00    0.03  432001/432001      arma::Mat<double>::Mat<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>(arma::Glue<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> const&) [21]
+                0.00    0.01  432001/432001      arma::Base<double, arma::Glue<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> >::Base() [37]
+                0.00    0.00 14256033/14256033     void arma::arma_check<char [37]>(bool, char const (&) [37]) [319]
+                0.00    0.00 2160005/3024007     arma::Mat<double>::~Mat() [323]
+                0.00    0.00 1728004/1728004     arma::Mat<double>::Mat(unsigned long long, unsigned long long) [328]
+                0.00    0.00  432001/432002      kepler(double, double) [335]
+                0.00    0.00  432001/432001      arma::Base<double, arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times> >::Base() [349]
+                0.00    0.00  432001/432001      arma::Glue_traits<arma::Mat<double>, arma::Mat<double>, arma::glue_times, true>::Glue_traits() [337]
+                0.00    0.00  432001/432001      arma::Base<double, arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> >::Base() [348]
+                0.00    0.00  432001/432001      arma::Glue_traits<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times, true>::Glue_traits() [339]
+                0.00    0.00  432001/432001      arma::Glue_traits<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times, true>::Glue_traits() [338]
+-----------------------------------------------
+                0.00    0.04       1/1           main <cycle 1> [9]
+[11]     3.1    0.00    0.04       1         simul(double*, double*, double*) [11]
+                0.00    0.04  432001/432001      CoordGPS(double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double) [10]
+                0.00    0.00       2/2           __gnu_cxx::__promote_2<int, int, __gnu_cxx::__promote<int, std::__is_integer<int>::__value>::__type, __gnu_cxx::__promote<int, std::__is_integer<int>::__value>::__type>::__type std::pow<int, int>(int, int) [358]
+                0.00    0.00       1/1           __gnu_cxx::__promote_2<double, int, __gnu_cxx::__promote<double, std::__is_integer<double>::__value>::__type, __gnu_cxx::__promote<int, std::__is_integer<int>::__value>::__type>::__type std::pow<double, int>(double, int) [385]
+                0.00    0.00       1/1           std::operator|(std::_Ios_Openmode, std::_Ios_Openmode) [386]
+-----------------------------------------------
+                                                 <spontaneous>
+[12]     3.1    0.04    0.00                 std::__convert_from_v(int* const&, char*, int, char const*, ...) [12]
+-----------------------------------------------
+                                                 <spontaneous>
+[13]     3.1    0.04    0.00                 __Balloc_D2A [13]
+-----------------------------------------------
+                                                 <spontaneous>
+[14]     3.1    0.04    0.00                 __fentry__ [14]
+-----------------------------------------------
+                                                 <spontaneous>
+[15]     3.1    0.04    0.00                 __lshift_D2A [15]
+-----------------------------------------------
+                                                 <spontaneous>
+[16]     2.3    0.03    0.00                 cos [16]
+-----------------------------------------------
+                0.00    0.01  432001/1296003     void arma::glue_times::apply<double, false, false, false, false, false, arma::Mat<double>, arma::Mat<double>, arma::Mat<double>, arma::Mat<double> >(arma::Mat<double>&, arma::Mat<double> const&, arma::Mat<double> const&, arma::Mat<double> const&, arma::Mat<double> const&, double) [19]
+                0.01    0.01  864002/1296003     void arma::glue_times::apply<double, false, false, false, false, arma::Mat<double>, arma::Mat<double>, arma::Mat<double> >(arma::Mat<double>&, arma::Mat<double> const&, arma::Mat<double> const&, arma::Mat<double> const&, double) [26]
+[17]     2.3    0.01    0.02 1296003         void arma::glue_times::apply<double, false, false, false, arma::Mat<double>, arma::Mat<double> >(arma::Mat<double>&, arma::Mat<double> const&, arma::Mat<double> const&, double) [17]
+                0.01    0.01 1296003/1296003     arma::Mat<double>::set_size(unsigned long long, unsigned long long) [25]
+                0.00    0.00 1296003/1296003     void arma::arma_assert_trans_mul_size<false, false>(unsigned long long, unsigned long long, unsigned long long, unsigned long long, char const*) [332]
+                0.00    0.00 1296003/1296003     void arma::gemv<false, false, false>::apply_blas_type<double, arma::Mat<double> >(double*, arma::Mat<double> const&, double const*, double, double) [333]
+-----------------------------------------------
+                0.00    0.03  432001/432001      arma::Mat<double>::Mat<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>(arma::Glue<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> const&) [21]
+[18]     2.3    0.00    0.03  432001         void arma::glue_times::apply<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double> >(arma::Mat<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>::elem_type>&, arma::Glue<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> const&) [18]
+                0.00    0.03  432001/432001      void arma::glue_times_redirect<4ull>::apply<arma::Mat<double>, arma::Mat<double>, arma::Mat<double>, arma::Mat<double> >(arma::Mat<arma::Mat<double>::elem_type>&, arma::Glue<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> const&) [20]
+-----------------------------------------------
+                0.00    0.03  432001/432001      void arma::glue_times_redirect<4ull>::apply<arma::Mat<double>, arma::Mat<double>, arma::Mat<double>, arma::Mat<double> >(arma::Mat<arma::Mat<double>::elem_type>&, arma::Glue<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> const&) [20]
+[19]     2.3    0.00    0.03  432001         void arma::glue_times::apply<double, false, false, false, false, false, arma::Mat<double>, arma::Mat<double>, arma::Mat<double>, arma::Mat<double> >(arma::Mat<double>&, arma::Mat<double> const&, arma::Mat<double> const&, arma::Mat<double> const&, arma::Mat<double> const&, double) [19]
+                0.00    0.02  432001/432001      void arma::glue_times::apply<double, false, false, false, false, arma::Mat<double>, arma::Mat<double>, arma::Mat<double> >(arma::Mat<double>&, arma::Mat<double> const&, arma::Mat<double> const&, arma::Mat<double> const&, double) [26]
+                0.00    0.01  432001/1296003     void arma::glue_times::apply<double, false, false, false, arma::Mat<double>, arma::Mat<double> >(arma::Mat<double>&, arma::Mat<double> const&, arma::Mat<double> const&, double) [17]
+                0.00    0.00  432001/864002      arma::Mat<double>::Mat() [334]
+                0.00    0.00  432001/3024007     arma::Mat<double>::~Mat() [323]
+-----------------------------------------------
+                0.00    0.03  432001/432001      void arma::glue_times::apply<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double> >(arma::Mat<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>::elem_type>&, arma::Glue<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> const&) [18]
+[20]     2.3    0.00    0.03  432001         void arma::glue_times_redirect<4ull>::apply<arma::Mat<double>, arma::Mat<double>, arma::Mat<double>, arma::Mat<double> >(arma::Mat<arma::Mat<double>::elem_type>&, arma::Glue<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> const&) [20]
+                0.00    0.03  432001/432001      void arma::glue_times::apply<double, false, false, false, false, false, arma::Mat<double>, arma::Mat<double>, arma::Mat<double>, arma::Mat<double> >(arma::Mat<double>&, arma::Mat<double> const&, arma::Mat<double> const&, arma::Mat<double> const&, arma::Mat<double> const&, double) [19]
+                0.00    0.00 1728004/1728004     arma::partial_unwrap<arma::Mat<double> >::partial_unwrap(arma::Mat<double> const&) [326]
+-----------------------------------------------
+                0.00    0.03  432001/432001      CoordGPS(double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double) [10]
+[21]     2.3    0.00    0.03  432001         arma::Mat<double>::Mat<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>(arma::Glue<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> const&) [21]
+                0.00    0.03  432001/432001      void arma::glue_times::apply<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double> >(arma::Mat<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>::elem_type>&, arma::Glue<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> const&) [18]
+                0.00    0.00  432001/3024007     arma::Base<double, arma::Mat<double> >::Base() [324]
+-----------------------------------------------
+                                                 <spontaneous>
+[22]     1.5    0.02    0.00                 btowc [22]
+-----------------------------------------------
+                                                 <spontaneous>
+[23]     1.5    0.02    0.00                 mbrtowc [23]
+-----------------------------------------------
+                                                 <spontaneous>
+[24]     1.5    0.02    0.00                 sin [24]
+-----------------------------------------------
+                0.01    0.01 1296003/1296003     void arma::glue_times::apply<double, false, false, false, arma::Mat<double>, arma::Mat<double> >(arma::Mat<double>&, arma::Mat<double> const&, arma::Mat<double> const&, double) [17]
+[25]     1.5    0.01    0.01 1296003         arma::Mat<double>::set_size(unsigned long long, unsigned long long) [25]
+                0.01    0.00 1296003/1296003     arma::Mat<double>::init_warm(unsigned long long, unsigned long long) [35]
+-----------------------------------------------
+                0.00    0.02  432001/432001      void arma::glue_times::apply<double, false, false, false, false, false, arma::Mat<double>, arma::Mat<double>, arma::Mat<double>, arma::Mat<double> >(arma::Mat<double>&, arma::Mat<double> const&, arma::Mat<double> const&, arma::Mat<double> const&, arma::Mat<double> const&, double) [19]
+[26]     1.5    0.00    0.02  432001         void arma::glue_times::apply<double, false, false, false, false, arma::Mat<double>, arma::Mat<double>, arma::Mat<double> >(arma::Mat<double>&, arma::Mat<double> const&, arma::Mat<double> const&, arma::Mat<double> const&, double) [26]
+                0.01    0.01  864002/1296003     void arma::glue_times::apply<double, false, false, false, arma::Mat<double>, arma::Mat<double> >(arma::Mat<double>&, arma::Mat<double> const&, arma::Mat<double> const&, double) [17]
+                0.00    0.00  432001/864002      arma::Mat<double>::Mat() [334]
+                0.00    0.00  432001/3024007     arma::Mat<double>::~Mat() [323]
+-----------------------------------------------
+                                                 <spontaneous>
+[27]     1.5    0.02    0.00                 std::istreambuf_iterator<char, std::char_traits<char> >::_M_get() const [27]
+-----------------------------------------------
+                                                 <spontaneous>
+[28]     1.5    0.02    0.00                 std::ctype<char>::widen(char const*, char const*, char*) const [28]
+-----------------------------------------------
+                                                 <spontaneous>
+[29]     1.5    0.02    0.00                 std::ostream& std::ostream::_M_insert<double>(double) [29]
+-----------------------------------------------
+                                                 <spontaneous>
+[30]     1.5    0.02    0.00                 std::string::push_back(char) [30]
+-----------------------------------------------
+                                                 <spontaneous>
+[31]     1.5    0.02    0.00                 std::basic_streambuf<char, std::char_traits<char> >::xsputn(char const*, long long) [31]
+-----------------------------------------------
+                                                 <spontaneous>
+[32]     1.5    0.02    0.00                 __cmp_D2A [32]
+-----------------------------------------------
+                                                 <spontaneous>
+[33]     1.5    0.02    0.00                 __hexnan_D2A [33]
+-----------------------------------------------
+                                                 <spontaneous>
+[34]     1.5    0.02    0.00                 __sum_D2A [34]
+-----------------------------------------------
+                0.01    0.00 1296003/1296003     arma::Mat<double>::set_size(unsigned long long, unsigned long long) [25]
+[35]     0.8    0.01    0.00 1296003         arma::Mat<double>::init_warm(unsigned long long, unsigned long long) [35]
+                0.00    0.00 1296003/1296003     void arma::arma_check<char*>(bool, char* const&) [330]
+                0.00    0.00 1296003/1296003     void arma::arma_check<char [74]>(bool, char const (&) [74]) [329]
+-----------------------------------------------
+                0.01    0.00  432001/432001      arma::Base<double, arma::Glue<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> >::Base() [37]
+[36]     0.8    0.01    0.00  432001         arma::Base_trans_default<arma::Glue<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> >::Base_trans_default() [36]
+-----------------------------------------------
+                0.00    0.01  432001/432001      CoordGPS(double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double) [10]
+[37]     0.8    0.00    0.01  432001         arma::Base<double, arma::Glue<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> >::Base() [37]
+                0.01    0.00  432001/432001      arma::Base_trans_default<arma::Glue<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> >::Base_trans_default() [36]
+                0.00    0.00  432001/432001      arma::Base_extra_yes<double, arma::Glue<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> >::Base_extra_yes() [343]
+                0.00    0.00  432001/432001      arma::Base_eval_expr<double, arma::Glue<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> >::Base_eval_expr() [340]
+-----------------------------------------------
+                                                 <spontaneous>
+[38]     0.8    0.01    0.00                 std::__use_cache<std::__numpunct_cache<char> >::operator()(std::locale const&) const [38]
+-----------------------------------------------
+                                                 <spontaneous>
+[39]     0.8    0.01    0.00                 std::__basic_file<char>::is_open() const [39]
+-----------------------------------------------
+                                                 <spontaneous>
+[40]     0.8    0.01    0.00                 std::istreambuf_iterator<char, std::char_traits<char> >::equal(std::istreambuf_iterator<char, std::char_traits<char> > const&) const [40]
+-----------------------------------------------
+                                                 <spontaneous>
+[41]     0.8    0.01    0.00                 std::locale::id::_M_id() const [41]
+-----------------------------------------------
+                                                 <spontaneous>
+[42]     0.8    0.01    0.00                 std::num_get<char, std::istreambuf_iterator<char, std::char_traits<char> > >::do_get(std::istreambuf_iterator<char, std::char_traits<char> >, std::istreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, std::_Ios_Iostate&, double&) const [42]
+-----------------------------------------------
+                                                 <spontaneous>
+[43]     0.8    0.01    0.00                 std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_float<double>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, char, double) const [43]
+-----------------------------------------------
+                                                 <spontaneous>
+[44]     0.8    0.01    0.00                 std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_float<long double>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, char, long double) const [44]
+-----------------------------------------------
+                                                 <spontaneous>
+[45]     0.8    0.01    0.00                 std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, double) const [45]
+-----------------------------------------------
+                                                 <spontaneous>
+[46]     0.8    0.01    0.00                 std::istream::sentry::sentry(std::istream&, bool) [46]
+-----------------------------------------------
+                                                 <spontaneous>
+[47]     0.8    0.01    0.00                 std::ostream::sentry::sentry(std::ostream&) [47]
+-----------------------------------------------
+                                                 <spontaneous>
+[48]     0.8    0.01    0.00                 std::string::_Rep::_M_dispose(std::allocator<char> const&) [48]
+-----------------------------------------------
+                                                 <spontaneous>
+[49]     0.8    0.01    0.00                 std::locale::facet::_S_get_c_locale() [49]
+-----------------------------------------------
+                                                 <spontaneous>
+[50]     0.8    0.01    0.00                 std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long long) [50]
+-----------------------------------------------
+                                                 <spontaneous>
+[51]     0.8    0.01    0.00                 std::ctype<char> const& std::use_facet<std::ctype<char> >(std::locale const&) [51]
+-----------------------------------------------
+                                                 <spontaneous>
+[52]     0.8    0.01    0.00                 std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) [52]
+-----------------------------------------------
+                                                 <spontaneous>
+[53]     0.8    0.01    0.00                 operator delete(void*) [53]
+-----------------------------------------------
+                                                 <spontaneous>
+[54]     0.8    0.01    0.00                 __dynamic_cast [54]
+-----------------------------------------------
+                                                 <spontaneous>
+[55]     0.8    0.01    0.00                 __mingw_pformat [55]
+-----------------------------------------------
+                                                 <spontaneous>
+[56]     0.8    0.01    0.00                 __mingw_vsnprintf [56]
+-----------------------------------------------
+                                                 <spontaneous>
+[57]     0.8    0.01    0.00                 __ratio_D2A [57]
+-----------------------------------------------
+                                                 <spontaneous>
+[58]     0.8    0.01    0.00                 __s2b_D2A [58]
+-----------------------------------------------
+                0.00    0.00 14256033/14256033     CoordGPS(double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double) [10]
+[319]    0.0    0.00    0.00 14256033         void arma::arma_check<char [37]>(bool, char const (&) [37]) [319]
+-----------------------------------------------
+                0.00    0.00 3024007/3024007     arma::Base<double, arma::Mat<double> >::Base() [324]
+[320]    0.0    0.00    0.00 3024007         arma::Base_eval_Mat<double, arma::Mat<double> >::Base_eval_Mat() [320]
+-----------------------------------------------
+                0.00    0.00 3024007/3024007     arma::Base<double, arma::Mat<double> >::Base() [324]
+[321]    0.0    0.00    0.00 3024007         arma::Base_extra_yes<double, arma::Mat<double> >::Base_extra_yes() [321]
+-----------------------------------------------
+                0.00    0.00 3024007/3024007     arma::Base<double, arma::Mat<double> >::Base() [324]
+[322]    0.0    0.00    0.00 3024007         arma::Base_trans_default<arma::Mat<double> >::Base_trans_default() [322]
+-----------------------------------------------
+                0.00    0.00  432001/3024007     void arma::glue_times::apply<double, false, false, false, false, false, arma::Mat<double>, arma::Mat<double>, arma::Mat<double>, arma::Mat<double> >(arma::Mat<double>&, arma::Mat<double> const&, arma::Mat<double> const&, arma::Mat<double> const&, arma::Mat<double> const&, double) [19]
+                0.00    0.00  432001/3024007     void arma::glue_times::apply<double, false, false, false, false, arma::Mat<double>, arma::Mat<double>, arma::Mat<double> >(arma::Mat<double>&, arma::Mat<double> const&, arma::Mat<double> const&, arma::Mat<double> const&, double) [26]
+                0.00    0.00 2160005/3024007     CoordGPS(double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double) [10]
+[323]    0.0    0.00    0.00 3024007         arma::Mat<double>::~Mat() [323]
+-----------------------------------------------
+                0.00    0.00  432001/3024007     arma::Mat<double>::Mat<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>(arma::Glue<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> const&) [21]
+                0.00    0.00  864002/3024007     arma::Mat<double>::Mat() [334]
+                0.00    0.00 1728004/3024007     arma::Mat<double>::Mat(unsigned long long, unsigned long long) [328]
+[324]    0.0    0.00    0.00 3024007         arma::Base<double, arma::Mat<double> >::Base() [324]
+                0.00    0.00 3024007/3024007     arma::Base_extra_yes<double, arma::Mat<double> >::Base_extra_yes() [321]
+                0.00    0.00 3024007/3024007     arma::Base_eval_Mat<double, arma::Mat<double> >::Base_eval_Mat() [320]
+                0.00    0.00 3024007/3024007     arma::Base_trans_default<arma::Mat<double> >::Base_trans_default() [322]
+-----------------------------------------------
+                0.00    0.00 1728004/1728004     arma::Mat<double>::init_cold() [327]
+[325]    0.0    0.00    0.00 1728004         void arma::arma_check<char const*>(bool, char const* const&) [325]
+-----------------------------------------------
+                0.00    0.00 1728004/1728004     void arma::glue_times_redirect<4ull>::apply<arma::Mat<double>, arma::Mat<double>, arma::Mat<double>, arma::Mat<double> >(arma::Mat<arma::Mat<double>::elem_type>&, arma::Glue<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> const&) [20]
+[326]    0.0    0.00    0.00 1728004         arma::partial_unwrap<arma::Mat<double> >::partial_unwrap(arma::Mat<double> const&) [326]
+-----------------------------------------------
+                0.00    0.00 1728004/1728004     arma::Mat<double>::Mat(unsigned long long, unsigned long long) [328]
+[327]    0.0    0.00    0.00 1728004         arma::Mat<double>::init_cold() [327]
+                0.00    0.00 1728004/1728004     void arma::arma_check<char const*>(bool, char const* const&) [325]
+-----------------------------------------------
+                0.00    0.00 1728004/1728004     CoordGPS(double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double) [10]
+[328]    0.0    0.00    0.00 1728004         arma::Mat<double>::Mat(unsigned long long, unsigned long long) [328]
+                0.00    0.00 1728004/3024007     arma::Base<double, arma::Mat<double> >::Base() [324]
+                0.00    0.00 1728004/1728004     arma::Mat<double>::init_cold() [327]
+-----------------------------------------------
+                0.00    0.00 1296003/1296003     arma::Mat<double>::init_warm(unsigned long long, unsigned long long) [35]
+[329]    0.0    0.00    0.00 1296003         void arma::arma_check<char [74]>(bool, char const (&) [74]) [329]
+-----------------------------------------------
+                0.00    0.00 1296003/1296003     arma::Mat<double>::init_warm(unsigned long long, unsigned long long) [35]
+[330]    0.0    0.00    0.00 1296003         void arma::arma_check<char*>(bool, char* const&) [330]
+-----------------------------------------------
+                0.00    0.00 1296003/1296003     void arma::gemv<false, false, false>::apply_blas_type<double, arma::Mat<double> >(double*, arma::Mat<double> const&, double const*, double, double) [333]
+[331]    0.0    0.00    0.00 1296003         void arma::gemv_emul_tinysq<false, false, false>::apply<double, arma::Mat<double> >(double*, arma::Mat<double> const&, double const*, double, double) [331]
+-----------------------------------------------
+                0.00    0.00 1296003/1296003     void arma::glue_times::apply<double, false, false, false, arma::Mat<double>, arma::Mat<double> >(arma::Mat<double>&, arma::Mat<double> const&, arma::Mat<double> const&, double) [17]
+[332]    0.0    0.00    0.00 1296003         void arma::arma_assert_trans_mul_size<false, false>(unsigned long long, unsigned long long, unsigned long long, unsigned long long, char const*) [332]
+-----------------------------------------------
+                0.00    0.00 1296003/1296003     void arma::glue_times::apply<double, false, false, false, arma::Mat<double>, arma::Mat<double> >(arma::Mat<double>&, arma::Mat<double> const&, arma::Mat<double> const&, double) [17]
+[333]    0.0    0.00    0.00 1296003         void arma::gemv<false, false, false>::apply_blas_type<double, arma::Mat<double> >(double*, arma::Mat<double> const&, double const*, double, double) [333]
+                0.00    0.00 1296003/1296003     void arma::gemv_emul_tinysq<false, false, false>::apply<double, arma::Mat<double> >(double*, arma::Mat<double> const&, double const*, double, double) [331]
+-----------------------------------------------
+                0.00    0.00  432001/864002      void arma::glue_times::apply<double, false, false, false, false, false, arma::Mat<double>, arma::Mat<double>, arma::Mat<double>, arma::Mat<double> >(arma::Mat<double>&, arma::Mat<double> const&, arma::Mat<double> const&, arma::Mat<double> const&, arma::Mat<double> const&, double) [19]
+                0.00    0.00  432001/864002      void arma::glue_times::apply<double, false, false, false, false, arma::Mat<double>, arma::Mat<double>, arma::Mat<double> >(arma::Mat<double>&, arma::Mat<double> const&, arma::Mat<double> const&, arma::Mat<double> const&, double) [26]
+[334]    0.0    0.00    0.00  864002         arma::Mat<double>::Mat() [334]
+                0.00    0.00  864002/3024007     arma::Base<double, arma::Mat<double> >::Base() [324]
+-----------------------------------------------
+                0.00    0.00       1/432002      main <cycle 1> [9]
+                0.00    0.00  432001/432002      CoordGPS(double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double) [10]
+[335]    0.0    0.00    0.00  432002         kepler(double, double) [335]
+                0.00    0.00  432002/432002      __gnu_cxx::__enable_if<std::__is_integer<int>::__value, double>::__type std::sin<int>(int) [336]
+-----------------------------------------------
+                0.00    0.00  432002/432002      kepler(double, double) [335]
+[336]    0.0    0.00    0.00  432002         __gnu_cxx::__enable_if<std::__is_integer<int>::__value, double>::__type std::sin<int>(int) [336]
+-----------------------------------------------
+                0.00    0.00  432001/432001      CoordGPS(double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double) [10]
+[337]    0.0    0.00    0.00  432001         arma::Glue_traits<arma::Mat<double>, arma::Mat<double>, arma::glue_times, true>::Glue_traits() [337]
+-----------------------------------------------
+                0.00    0.00  432001/432001      CoordGPS(double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double) [10]
+[338]    0.0    0.00    0.00  432001         arma::Glue_traits<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times, true>::Glue_traits() [338]
+-----------------------------------------------
+                0.00    0.00  432001/432001      CoordGPS(double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double) [10]
+[339]    0.0    0.00    0.00  432001         arma::Glue_traits<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times, true>::Glue_traits() [339]
+-----------------------------------------------
+                0.00    0.00  432001/432001      arma::Base<double, arma::Glue<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> >::Base() [37]
+[340]    0.0    0.00    0.00  432001         arma::Base_eval_expr<double, arma::Glue<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> >::Base_eval_expr() [340]
+-----------------------------------------------
+                0.00    0.00  432001/432001      arma::Base<double, arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> >::Base() [348]
+[341]    0.0    0.00    0.00  432001         arma::Base_eval_expr<double, arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> >::Base_eval_expr() [341]
+-----------------------------------------------
+                0.00    0.00  432001/432001      arma::Base<double, arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times> >::Base() [349]
+[342]    0.0    0.00    0.00  432001         arma::Base_eval_expr<double, arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times> >::Base_eval_expr() [342]
+-----------------------------------------------
+                0.00    0.00  432001/432001      arma::Base<double, arma::Glue<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> >::Base() [37]
+[343]    0.0    0.00    0.00  432001         arma::Base_extra_yes<double, arma::Glue<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> >::Base_extra_yes() [343]
+-----------------------------------------------
+                0.00    0.00  432001/432001      arma::Base<double, arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> >::Base() [348]
+[344]    0.0    0.00    0.00  432001         arma::Base_extra_yes<double, arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> >::Base_extra_yes() [344]
+-----------------------------------------------
+                0.00    0.00  432001/432001      arma::Base<double, arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times> >::Base() [349]
+[345]    0.0    0.00    0.00  432001         arma::Base_extra_yes<double, arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times> >::Base_extra_yes() [345]
+-----------------------------------------------
+                0.00    0.00  432001/432001      arma::Base<double, arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> >::Base() [348]
+[346]    0.0    0.00    0.00  432001         arma::Base_trans_default<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> >::Base_trans_default() [346]
+-----------------------------------------------
+                0.00    0.00  432001/432001      arma::Base<double, arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times> >::Base() [349]
+[347]    0.0    0.00    0.00  432001         arma::Base_trans_default<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times> >::Base_trans_default() [347]
+-----------------------------------------------
+                0.00    0.00  432001/432001      CoordGPS(double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double) [10]
+[348]    0.0    0.00    0.00  432001         arma::Base<double, arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> >::Base() [348]
+                0.00    0.00  432001/432001      arma::Base_extra_yes<double, arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> >::Base_extra_yes() [344]
+                0.00    0.00  432001/432001      arma::Base_eval_expr<double, arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> >::Base_eval_expr() [341]
+                0.00    0.00  432001/432001      arma::Base_trans_default<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> >::Base_trans_default() [346]
+-----------------------------------------------
+                0.00    0.00  432001/432001      CoordGPS(double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double) [10]
+[349]    0.0    0.00    0.00  432001         arma::Base<double, arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times> >::Base() [349]
+                0.00    0.00  432001/432001      arma::Base_extra_yes<double, arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times> >::Base_extra_yes() [345]
+                0.00    0.00  432001/432001      arma::Base_eval_expr<double, arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times> >::Base_eval_expr() [342]
+                0.00    0.00  432001/432001      arma::Base_trans_default<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times> >::Base_trans_default() [347]
+-----------------------------------------------
+                0.00    0.00       2/4           UnitTest::Timer::Start() [354]
+                0.00    0.00       2/4           UnitTest::Timer::GetTimeInMs() const [357]
+[350]    0.0    0.00    0.00       4         UnitTest::Timer::GetTime() const [350]
+-----------------------------------------------
+                0.00    0.00       2/2           UnitTest::TestReporterStdout::ReportSummary(int, int, int, float) [371]
+[351]    0.0    0.00    0.00       2         printf(char const*, ...) [351]
+-----------------------------------------------
+                0.00    0.00       1/2           main <cycle 1> [9]
+                0.00    0.00       1/2           void UnitTest::ExecuteTest<UnitTest::Test>(UnitTest::Test&, UnitTest::TestDetails const&, bool) <cycle 1> [364]
+[352]    0.0    0.00    0.00       2         UnitTest::CurrentTest::Details() [352]
+-----------------------------------------------
+                0.00    0.00       1/2           UnitTest::TestRunner::RunTest(UnitTest::TestResults*, UnitTest::Test*, int) const <cycle 1> [380]
+                0.00    0.00       1/2           main <cycle 1> [9]
+[353]    0.0    0.00    0.00       2         UnitTest::CurrentTest::Results() [353]
+-----------------------------------------------
+                0.00    0.00       1/2           UnitTest::TestRunner::TestRunner(UnitTest::TestReporter&) [362]
+                0.00    0.00       1/2           UnitTest::TestRunner::RunTest(UnitTest::TestResults*, UnitTest::Test*, int) const <cycle 1> [380]
+[354]    0.0    0.00    0.00       2         UnitTest::Timer::Start() [354]
+                0.00    0.00       2/4           UnitTest::Timer::GetTime() const [350]
+-----------------------------------------------
+                0.00    0.00       1/2           UnitTest::TestRunner::TestRunner(UnitTest::TestReporter&) [362]
+                0.00    0.00       1/2           UnitTest::TestRunner::RunTest(UnitTest::TestResults*, UnitTest::Test*, int) const <cycle 1> [380]
+[355]    0.0    0.00    0.00       2         UnitTest::Timer::Timer() [355]
+-----------------------------------------------
+                0.00    0.00       2/2           UnitTest::TestRunner::Finish() const [379]
+[356]    0.0    0.00    0.00       2         UnitTest::TestResults::GetFailureCount() const [356]
+-----------------------------------------------
+                0.00    0.00       1/2           UnitTest::TestRunner::Finish() const [379]
+                0.00    0.00       1/2           UnitTest::TestRunner::RunTest(UnitTest::TestResults*, UnitTest::Test*, int) const <cycle 1> [380]
+[357]    0.0    0.00    0.00       2         UnitTest::Timer::GetTimeInMs() const [357]
+                0.00    0.00       2/4           UnitTest::Timer::GetTime() const [350]
+-----------------------------------------------
+                0.00    0.00       2/2           simul(double*, double*, double*) [11]
+[358]    0.0    0.00    0.00       2         __gnu_cxx::__promote_2<int, int, __gnu_cxx::__promote<int, std::__is_integer<int>::__value>::__type, __gnu_cxx::__promote<int, std::__is_integer<int>::__value>::__type>::__type std::pow<int, int>(int, int) [358]
+-----------------------------------------------
+                0.00    0.00       1/1           main <cycle 1> [9]
+[359]    0.0    0.00    0.00       1         parser(double*, double*, double*) [359]
+-----------------------------------------------
+                0.00    0.00       1/1           main <cycle 1> [9]
+[360]    0.0    0.00    0.00       1         comparr(double*, double*, double*, double*, double*, double*, double, double*, double*, double*, double*, double*, double*) [360]
+-----------------------------------------------
+                0.00    0.00       1/1           main <cycle 1> [9]
+[361]    0.0    0.00    0.00       1         void UnitTest::CheckEqual<double, double>(UnitTest::TestResults&, double const&, double const&, UnitTest::TestDetails const&) [361]
+-----------------------------------------------
+                0.00    0.00       1/1           UnitTest::RunAllTests() <cycle 1> [365]
+[362]    0.0    0.00    0.00       1         UnitTest::TestRunner::TestRunner(UnitTest::TestReporter&) [362]
+                0.00    0.00       1/1           UnitTest::TestResults::TestResults(UnitTest::TestReporter*) [369]
+                0.00    0.00       1/2           UnitTest::Timer::Timer() [355]
+                0.00    0.00       1/2           UnitTest::Timer::Start() [354]
+-----------------------------------------------
+                0.00    0.00       1/1           UnitTest::RunAllTests() <cycle 1> [365]
+[363]    0.0    0.00    0.00       1         UnitTest::TestRunner::~TestRunner() [363]
+-----------------------------------------------
+                                   1             UnitTest::Test::Run() <cycle 1> [376]
+[364]    0.0    0.00    0.00       1         void UnitTest::ExecuteTest<UnitTest::Test>(UnitTest::Test&, UnitTest::TestDetails const&, bool) <cycle 1> [364]
+                0.00    0.00       1/2           UnitTest::CurrentTest::Details() [352]
+                                   1             main <cycle 1> [9]
+-----------------------------------------------
+                                   1             main <cycle 1> [9]
+[365]    0.0    0.00    0.00       1         UnitTest::RunAllTests() <cycle 1> [365]
+                0.00    0.00       1/1           UnitTest::TestRunner::TestRunner(UnitTest::TestReporter&) [362]
+                0.00    0.00       1/1           UnitTest::Test::GetTestList() [375]
+                0.00    0.00       1/1           UnitTest::TestRunner::~TestRunner() [363]
+                0.00    0.00       1/1           UnitTest::TestReporterStdout::~TestReporterStdout() [374]
+                                   1             int UnitTest::TestRunner::RunTestsIf<UnitTest::True>(UnitTest::TestList const&, char const*, UnitTest::True const&, int) const <cycle 1> [377]
+-----------------------------------------------
+                0.00    0.00       1/1           main <cycle 1> [9]
+[366]    0.0    0.00    0.00       1         UnitTest::TestDetails::TestDetails(UnitTest::TestDetails const&, int) [366]
+-----------------------------------------------
+                0.00    0.00       1/1           UnitTest::TestRunner::RunTest(UnitTest::TestResults*, UnitTest::Test*, int) const <cycle 1> [380]
+[367]    0.0    0.00    0.00       1         UnitTest::TestResults::OnTestStart(UnitTest::TestDetails const&) [367]
+                0.00    0.00       1/1           UnitTest::TestReporterStdout::ReportTestStart(UnitTest::TestDetails const&) [372]
+-----------------------------------------------
+                0.00    0.00       1/1           UnitTest::TestRunner::RunTest(UnitTest::TestResults*, UnitTest::Test*, int) const <cycle 1> [380]
+[368]    0.0    0.00    0.00       1         UnitTest::TestResults::OnTestFinish(UnitTest::TestDetails const&, float) [368]
+                0.00    0.00       1/1           UnitTest::TestReporterStdout::ReportTestFinish(UnitTest::TestDetails const&, float) [373]
+-----------------------------------------------
+                0.00    0.00       1/1           UnitTest::TestRunner::TestRunner(UnitTest::TestReporter&) [362]
+[369]    0.0    0.00    0.00       1         UnitTest::TestResults::TestResults(UnitTest::TestReporter*) [369]
+-----------------------------------------------
+                0.00    0.00       1/1           UnitTest::TestReporterStdout::~TestReporterStdout() [374]
+[370]    0.0    0.00    0.00       1         UnitTest::TestReporter::~TestReporter() [370]
+-----------------------------------------------
+                0.00    0.00       1/1           UnitTest::TestRunner::Finish() const [379]
+[371]    0.0    0.00    0.00       1         UnitTest::TestReporterStdout::ReportSummary(int, int, int, float) [371]
+                0.00    0.00       2/2           printf(char const*, ...) [351]
+-----------------------------------------------
+                0.00    0.00       1/1           UnitTest::TestResults::OnTestStart(UnitTest::TestDetails const&) [367]
+[372]    0.0    0.00    0.00       1         UnitTest::TestReporterStdout::ReportTestStart(UnitTest::TestDetails const&) [372]
+-----------------------------------------------
+                0.00    0.00       1/1           UnitTest::TestResults::OnTestFinish(UnitTest::TestDetails const&, float) [368]
+[373]    0.0    0.00    0.00       1         UnitTest::TestReporterStdout::ReportTestFinish(UnitTest::TestDetails const&, float) [373]
+-----------------------------------------------
+                0.00    0.00       1/1           UnitTest::RunAllTests() <cycle 1> [365]
+[374]    0.0    0.00    0.00       1         UnitTest::TestReporterStdout::~TestReporterStdout() [374]
+                0.00    0.00       1/1           UnitTest::TestReporter::~TestReporter() [370]
+-----------------------------------------------
+                0.00    0.00       1/1           UnitTest::RunAllTests() <cycle 1> [365]
+[375]    0.0    0.00    0.00       1         UnitTest::Test::GetTestList() [375]
+-----------------------------------------------
+                                   1             UnitTest::TestRunner::RunTest(UnitTest::TestResults*, UnitTest::Test*, int) const <cycle 1> [380]
+[376]    0.0    0.00    0.00       1         UnitTest::Test::Run() <cycle 1> [376]
+                                   1             void UnitTest::ExecuteTest<UnitTest::Test>(UnitTest::Test&, UnitTest::TestDetails const&, bool) <cycle 1> [364]
+-----------------------------------------------
+                                   1             UnitTest::RunAllTests() <cycle 1> [365]
+[377]    0.0    0.00    0.00       1         int UnitTest::TestRunner::RunTestsIf<UnitTest::True>(UnitTest::TestList const&, char const*, UnitTest::True const&, int) const <cycle 1> [377]
+                0.00    0.00       1/1           UnitTest::TestList::GetHead() const [384]
+                0.00    0.00       1/1           UnitTest::TestRunner::IsTestInSuite(UnitTest::Test const*, char const*) const [378]
+                0.00    0.00       1/1           UnitTest::True::operator()(UnitTest::Test const*) const [383]
+                0.00    0.00       1/1           UnitTest::TestRunner::Finish() const [379]
+                                   1             UnitTest::TestRunner::RunTest(UnitTest::TestResults*, UnitTest::Test*, int) const <cycle 1> [380]
+-----------------------------------------------
+                0.00    0.00       1/1           int UnitTest::TestRunner::RunTestsIf<UnitTest::True>(UnitTest::TestList const&, char const*, UnitTest::True const&, int) const <cycle 1> [377]
+[378]    0.0    0.00    0.00       1         UnitTest::TestRunner::IsTestInSuite(UnitTest::Test const*, char const*) const [378]
+-----------------------------------------------
+                0.00    0.00       1/1           int UnitTest::TestRunner::RunTestsIf<UnitTest::True>(UnitTest::TestList const&, char const*, UnitTest::True const&, int) const <cycle 1> [377]
+[379]    0.0    0.00    0.00       1         UnitTest::TestRunner::Finish() const [379]
+                0.00    0.00       2/2           UnitTest::TestResults::GetFailureCount() const [356]
+                0.00    0.00       1/2           UnitTest::Timer::GetTimeInMs() const [357]
+                0.00    0.00       1/1           UnitTest::TestResults::GetFailedTestCount() const [382]
+                0.00    0.00       1/1           UnitTest::TestResults::GetTotalTestCount() const [381]
+                0.00    0.00       1/1           UnitTest::TestReporterStdout::ReportSummary(int, int, int, float) [371]
+-----------------------------------------------
+                                   1             int UnitTest::TestRunner::RunTestsIf<UnitTest::True>(UnitTest::TestList const&, char const*, UnitTest::True const&, int) const <cycle 1> [377]
+[380]    0.0    0.00    0.00       1         UnitTest::TestRunner::RunTest(UnitTest::TestResults*, UnitTest::Test*, int) const <cycle 1> [380]
+                0.00    0.00       1/2           UnitTest::CurrentTest::Results() [353]
+                0.00    0.00       1/2           UnitTest::Timer::Timer() [355]
+                0.00    0.00       1/2           UnitTest::Timer::Start() [354]
+                0.00    0.00       1/1           UnitTest::TestResults::OnTestStart(UnitTest::TestDetails const&) [367]
+                0.00    0.00       1/2           UnitTest::Timer::GetTimeInMs() const [357]
+                0.00    0.00       1/1           UnitTest::TestResults::OnTestFinish(UnitTest::TestDetails const&, float) [368]
+                                   1             UnitTest::Test::Run() <cycle 1> [376]
+-----------------------------------------------
+                0.00    0.00       1/1           UnitTest::TestRunner::Finish() const [379]
+[381]    0.0    0.00    0.00       1         UnitTest::TestResults::GetTotalTestCount() const [381]
+-----------------------------------------------
+                0.00    0.00       1/1           UnitTest::TestRunner::Finish() const [379]
+[382]    0.0    0.00    0.00       1         UnitTest::TestResults::GetFailedTestCount() const [382]
+-----------------------------------------------
+                0.00    0.00       1/1           int UnitTest::TestRunner::RunTestsIf<UnitTest::True>(UnitTest::TestList const&, char const*, UnitTest::True const&, int) const <cycle 1> [377]
+[383]    0.0    0.00    0.00       1         UnitTest::True::operator()(UnitTest::Test const*) const [383]
+-----------------------------------------------
+                0.00    0.00       1/1           int UnitTest::TestRunner::RunTestsIf<UnitTest::True>(UnitTest::TestList const&, char const*, UnitTest::True const&, int) const <cycle 1> [377]
+[384]    0.0    0.00    0.00       1         UnitTest::TestList::GetHead() const [384]
+-----------------------------------------------
+                0.00    0.00       1/1           simul(double*, double*, double*) [11]
+[385]    0.0    0.00    0.00       1         __gnu_cxx::__promote_2<double, int, __gnu_cxx::__promote<double, std::__is_integer<double>::__value>::__type, __gnu_cxx::__promote<int, std::__is_integer<int>::__value>::__type>::__type std::pow<double, int>(double, int) [385]
+-----------------------------------------------
+                0.00    0.00       1/1           simul(double*, double*, double*) [11]
+[386]    0.0    0.00    0.00       1         std::operator|(std::_Ios_Openmode, std::_Ios_Openmode) [386]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2017 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [11] simul(double*, double*, double*) [348] arma::Base<double, arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> >::Base() [44] std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_float<long double>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, char, long double) const
+ [335] kepler(double, double) [349] arma::Base<double, arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times> >::Base() [45] std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, double) const
+ [359] parser(double*, double*, double*) [333] void arma::gemv<false, false, false>::apply_blas_type<double, arma::Mat<double> >(double*, arma::Mat<double> const&, double const*, double, double) [46] std::istream::sentry::sentry(std::istream&, bool)
+ [351] printf(char const*, ...) [361] void UnitTest::CheckEqual<double, double>(UnitTest::TestResults&, double const&, double const&, UnitTest::TestDetails const&) [47] std::ostream::sentry::sentry(std::ostream&)
+ [360] comparr(double*, double*, double*, double*, double*, double*, double, double*, double*, double*, double*, double*, double*) [362] UnitTest::TestRunner::TestRunner(UnitTest::TestReporter&) [29] std::ostream& std::ostream::_M_insert<double>(double)
+  [10] CoordGPS(double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double) [363] UnitTest::TestRunner::~TestRunner() [48] std::string::_Rep::_M_dispose(std::allocator<char> const&)
+ [319] void arma::arma_check<char [37]>(bool, char const (&) [37]) [352] UnitTest::CurrentTest::Details() [30] std::string::push_back(char)
+ [329] void arma::arma_check<char [74]>(bool, char const (&) [74]) [353] UnitTest::CurrentTest::Results() [31] std::basic_streambuf<char, std::char_traits<char> >::xsputn(char const*, long long)
+ [325] void arma::arma_check<char const*>(bool, char const* const&) [364] void UnitTest::ExecuteTest<UnitTest::Test>(UnitTest::Test&, UnitTest::TestDetails const&, bool) [49] std::locale::facet::_S_get_c_locale()
+ [330] void arma::arma_check<char*>(bool, char* const&) [365] UnitTest::RunAllTests() [12] std::__convert_from_v(int* const&, char*, int, char const*, ...)
+  [18] void arma::glue_times::apply<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double> >(arma::Mat<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>::elem_type>&, arma::Glue<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> const&) [366] UnitTest::TestDetails::TestDetails(UnitTest::TestDetails const&, int) [50] std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long long)
+  [19] void arma::glue_times::apply<double, false, false, false, false, false, arma::Mat<double>, arma::Mat<double>, arma::Mat<double>, arma::Mat<double> >(arma::Mat<double>&, arma::Mat<double> const&, arma::Mat<double> const&, arma::Mat<double> const&, arma::Mat<double> const&, double) [367] UnitTest::TestResults::OnTestStart(UnitTest::TestDetails const&) [385] __gnu_cxx::__promote_2<double, int, __gnu_cxx::__promote<double, std::__is_integer<double>::__value>::__type, __gnu_cxx::__promote<int, std::__is_integer<int>::__value>::__type>::__type std::pow<double, int>(double, int)
+  [26] void arma::glue_times::apply<double, false, false, false, false, arma::Mat<double>, arma::Mat<double>, arma::Mat<double> >(arma::Mat<double>&, arma::Mat<double> const&, arma::Mat<double> const&, arma::Mat<double> const&, double) [368] UnitTest::TestResults::OnTestFinish(UnitTest::TestDetails const&, float) [358] __gnu_cxx::__promote_2<int, int, __gnu_cxx::__promote<int, std::__is_integer<int>::__value>::__type, __gnu_cxx::__promote<int, std::__is_integer<int>::__value>::__type>::__type std::pow<int, int>(int, int)
+  [17] void arma::glue_times::apply<double, false, false, false, arma::Mat<double>, arma::Mat<double> >(arma::Mat<double>&, arma::Mat<double> const&, arma::Mat<double> const&, double) [369] UnitTest::TestResults::TestResults(UnitTest::TestReporter*) [336] __gnu_cxx::__enable_if<std::__is_integer<int>::__value, double>::__type std::sin<int>(int)
+ [337] arma::Glue_traits<arma::Mat<double>, arma::Mat<double>, arma::glue_times, true>::Glue_traits() [370] UnitTest::TestReporter::~TestReporter() [51] std::ctype<char> const& std::use_facet<std::ctype<char> >(std::locale const&)
+ [338] arma::Glue_traits<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times, true>::Glue_traits() [371] UnitTest::TestReporterStdout::ReportSummary(int, int, int, float) [52] std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)
+ [339] arma::Glue_traits<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times, true>::Glue_traits() [372] UnitTest::TestReporterStdout::ReportTestStart(UnitTest::TestDetails const&) [386] std::operator|(std::_Ios_Openmode, std::_Ios_Openmode)
+ [320] arma::Base_eval_Mat<double, arma::Mat<double> >::Base_eval_Mat() [373] UnitTest::TestReporterStdout::ReportTestFinish(UnitTest::TestDetails const&, float) [53] operator delete(void*)
+ [340] arma::Base_eval_expr<double, arma::Glue<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> >::Base_eval_expr() [374] UnitTest::TestReporterStdout::~TestReporterStdout() [13] __Balloc_D2A
+ [341] arma::Base_eval_expr<double, arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> >::Base_eval_expr() [375] UnitTest::Test::GetTestList() [32] __cmp_D2A
+ [342] arma::Base_eval_expr<double, arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times> >::Base_eval_expr() [376] UnitTest::Test::Run() [1] __cosl_internal
+ [321] arma::Base_extra_yes<double, arma::Mat<double> >::Base_extra_yes() [354] UnitTest::Timer::Start() [54] __dynamic_cast
+ [343] arma::Base_extra_yes<double, arma::Glue<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> >::Base_extra_yes() [355] UnitTest::Timer::Timer() [14] __fentry__
+ [344] arma::Base_extra_yes<double, arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> >::Base_extra_yes() [377] int UnitTest::TestRunner::RunTestsIf<UnitTest::True>(UnitTest::TestList const&, char const*, UnitTest::True const&, int) const [33] __hexnan_D2A
+ [345] arma::Base_extra_yes<double, arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times> >::Base_extra_yes() [378] UnitTest::TestRunner::IsTestInSuite(UnitTest::Test const*, char const*) const [15] __lshift_D2A
+ [326] arma::partial_unwrap<arma::Mat<double> >::partial_unwrap(arma::Mat<double> const&) [379] UnitTest::TestRunner::Finish() const [55] __mingw_pformat
+ [331] void arma::gemv_emul_tinysq<false, false, false>::apply<double, arma::Mat<double> >(double*, arma::Mat<double> const&, double const*, double, double) [380] UnitTest::TestRunner::RunTest(UnitTest::TestResults*, UnitTest::Test*, int) const [56] __mingw_vsnprintf
+ [322] arma::Base_trans_default<arma::Mat<double> >::Base_trans_default() [356] UnitTest::TestResults::GetFailureCount() const [7] __multadd_D2A
+  [36] arma::Base_trans_default<arma::Glue<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> >::Base_trans_default() [381] UnitTest::TestResults::GetTotalTestCount() const [4] __powi
+ [346] arma::Base_trans_default<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> >::Base_trans_default() [382] UnitTest::TestResults::GetFailedTestCount() const [6] __quorem_D2A
+ [347] arma::Base_trans_default<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times> >::Base_trans_default() [383] UnitTest::True::operator()(UnitTest::Test const*) const [57] __ratio_D2A
+  [20] void arma::glue_times_redirect<4ull>::apply<arma::Mat<double>, arma::Mat<double>, arma::Mat<double>, arma::Mat<double> >(arma::Mat<arma::Mat<double>::elem_type>&, arma::Glue<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> const&) [357] UnitTest::Timer::GetTimeInMs() const [58] __s2b_D2A
+ [332] void arma::arma_assert_trans_mul_size<false, false>(unsigned long long, unsigned long long, unsigned long long, unsigned long long, char const*) [350] UnitTest::Timer::GetTime() const [3] __sinl_internal
+  [25] arma::Mat<double>::set_size(unsigned long long, unsigned long long) [384] UnitTest::TestList::GetHead() const [5] __strtodg
+ [327] arma::Mat<double>::init_cold() [38] std::__use_cache<std::__numpunct_cache<char> >::operator()(std::locale const&) const [34] __sum_D2A
+  [35] arma::Mat<double>::init_warm(unsigned long long, unsigned long long) [39] std::__basic_file<char>::is_open() const [2] _mcount_private
+ [334] arma::Mat<double>::Mat() [40] std::istreambuf_iterator<char, std::char_traits<char> >::equal(std::istreambuf_iterator<char, std::char_traits<char> > const&) const [22] btowc
+ [328] arma::Mat<double>::Mat(unsigned long long, unsigned long long) [27] std::istreambuf_iterator<char, std::char_traits<char> >::_M_get() const [16] cos
+  [21] arma::Mat<double>::Mat<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>(arma::Glue<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> const&) [28] std::ctype<char>::widen(char const*, char const*, char*) const [9] main
+ [323] arma::Mat<double>::~Mat() [41] std::locale::id::_M_id() const [23] mbrtowc
+ [324] arma::Base<double, arma::Mat<double> >::Base() [42] std::num_get<char, std::istreambuf_iterator<char, std::char_traits<char> > >::do_get(std::istreambuf_iterator<char, std::char_traits<char> >, std::istreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, std::_Ios_Iostate&, double&) const [24] sin
+  [37] arma::Base<double, arma::Glue<arma::Glue<arma::Glue<arma::Mat<double>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times>, arma::Mat<double>, arma::glue_times> >::Base() [43] std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_float<double>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, char, double) const (8) <cycle 1>

@@ -1,0 +1,58 @@
+Dr. Memory version 2.3.0 build 1 built on Feb  6 2020 06:07:09
+start time: 3684714:26:27.843 == 18:26:27.843 05/08/2021
+Recorded 118 suppression(s) from default C:\Program Files (x86)\Dr. Memory\bin64\suppress-default.txt
+Using system call file C:\Users\Tvvve\AppData\Roaming\Dr. Memory\symcache\syscalls_x64.txt
+Syscall mismatch detected.  Running on unknown kernel version!
+WARNING: duplicate entry added to name2num_table: WOWCLEANUP
+new thread #0 id=1552
+
+module load event: "LP2.exe" 0x0000000000400000-0x000000000061d000 modid: 1 D:\my\bdsephexercise\simulation\DetermSatPosition\LP2.exe
+
+module load event: "drmemorylib.dll" 0x000000006bde0000-0x000000006c07c000 modid: 2 C:\Program Files (x86)\Dr. Memory\bin64\release\drmemorylib.dll
+
+module load event: "libopenblas.dll" 0x000000006d7c0000-0x000000006f308000 modid: 3 D:\my\bdsephexercise\simulation\DetermSatPosition\libopenblas.dll
+
+module load event: "dynamorio.dll" 0x0000000071000000-0x00000000711b1000 modid: 4 C:\Program Files (x86)\Dr. Memory\dynamorio\lib64\release\dynamorio.dll
+
+module load event: "win32u.dll" 0x00007ff8a1f90000-0x00007ff8a1fb2000 modid: 5 C:\WINDOWS\System32\win32u.dll
+
+module load event: "KERNELBASE.dll" 0x00007ff8a1fc0000-0x00007ff8a2288000 modid: 6 C:\WINDOWS\System32\KERNELBASE.dll
+
+module load event: "ucrtbase.dll" 0x00007ff8a2290000-0x00007ff8a2390000 modid: 7 C:\WINDOWS\System32\ucrtbase.dll
+
+module load event: "msvcp_win.dll" 0x00007ff8a25f0000-0x00007ff8a268d000 modid: 8 C:\WINDOWS\System32\msvcp_win.dll
+
+module load event: "gdi32full.dll" 0x00007ff8a2710000-0x00007ff8a281b000 modid: 9 C:\WINDOWS\System32\gdi32full.dll
+
+module load event: "KERNEL32.dll" 0x00007ff8a30b0000-0x00007ff8a316d000 modid: 10 C:\WINDOWS\System32\KERNEL32.DLL
+
+module load event: "IMM32.dll" 0x00007ff8a3830000-0x00007ff8a3860000 modid: 11 C:\WINDOWS\System32\IMM32.DLL
+
+module load event: "msvcrt.dll" 0x00007ff8a3f50000-0x00007ff8a3fee000 modid: 12 C:\WINDOWS\System32\msvcrt.dll
+WARNING: new/delete has no local wrapper => disabling mismatch detection for msvcrt.dll
+WARNING: new/delete has no local wrapper => disabling mismatch detection for msvcrt.dll
+WARNING: new == new[] => disabling mismatch detection for msvcrt.dll
+WARNING: new/delete has no local wrapper => disabling mismatch detection for msvcrt.dll
+
+module load event: "GDI32.dll" 0x00007ff8a3ff0000-0x00007ff8a401a000 modid: 13 C:\WINDOWS\System32\GDI32.dll
+
+module load event: "USER32.dll" 0x00007ff8a4420000-0x00007ff8a45c0000 modid: 14 C:\WINDOWS\System32\USER32.dll
+WARNING: error finding UserConnectToServer syscall #
+module load event: "ntdll.dll" 0x00007ff8a4850000-0x00007ff8a4a45000 modid: 15 C:\WINDOWS\SYSTEM32\ntdll.dll
+WARNING: fail to find call to RtlFreeStringRoutine
+WARNING: fail to find call to RtlFreeStringRoutine
+WARNING: fail to find call to RtlFreeStringRoutine
+
+NEW THREAD: main thread 1552
+
+
+Error #1: UNADDRESSABLE ACCESS beyond top of stack: reading 0x000000000081fbd0-0x000000000081fbd8 8 byte(s)
+# 0 .text   [../../../../../src/gcc-6.4.0/libgcc/config/i386/cygwin.S:152] (0x00000000004134cb <LP2.exe+0x134cb>) modid:1
+# 1 _pei386_runtime_relocator [D:/my/bdsephexercise/simulation/UnitTest++/AssertException.cpp:11] (0x00000000004126f9 <LP2.exe+0x126f9>) modid:1
+# 2 __tmainCRTStartup [D:/NNIR/CodeBlocksMingwOpenblasArmadilloWxwidgets/CodeBlocks/mingw64/lib/gcc/x86_64-w64-mingw32/6.4.0/include/c++/bits/stl_vector.h:161] (0x000000000040127c <LP2.exe+0x127c>) modid:1
+# 3 .l_start [D:/NNIR/CodeBlocksMingwOpenblasArmadilloWxwidgets/CodeBlocks/mingw64/lib/gcc/x86_64-w64-mingw32/6.4.0/include/c++/bits/stl_vector.h:161] (0x000000000040151b <LP2.exe+0x151b>) modid:1
+# 4 KERNEL32.dll!BaseThreadInitThunk (0x00007ff8a30c7034 <KERNEL32.dll+0x17034>) modid:10
+Note: @0:00:00.250 in thread 1552
+Note: 0x000000000081fbd0 refers to 408 byte(s) beyond the top of the stack 0x000000000081fd68
+Note: instruction: or     $0x0000000000000000 (%rcx) -> (%rcx)
+	error end

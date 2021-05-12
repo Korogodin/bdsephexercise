@@ -1,0 +1,20 @@
+# File for suppressing errors found in pid 5048: "LP2.exe"
+
+# Suppression for Error #1
+UNADDRESSABLE ACCESS
+name=Error #1 (update to meaningful name)
+LP2.exe!.text
+LP2.exe!_pei386_runtime_relocator
+LP2.exe!__tmainCRTStartup
+LP2.exe!.l_start
+KERNEL32.dll!BaseThreadInitThunk
+
+## Mod+offs-style suppression for Error #1:
+UNADDRESSABLE ACCESS
+name=Error #1 (update to meaningful name)
+<LP2.exe+0x134cb>
+<LP2.exe+0x126f9>
+<LP2.exe+0x127c>
+<LP2.exe+0x151b>
+<KERNEL32.dll+0x17034>
+
