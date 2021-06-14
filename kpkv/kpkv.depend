@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1623392572 source:d:\nir\kpk\kpkv\kepler.cpp
+	"Kepler.h"
+	<math.h>
+
+1623392570 d:\nir\kpk\kpkv\kepler.h
+
+1623402964 source:d:\nir\kpk\kpkv\soordinate.cpp
+	"Soordinate.h"
+	<iostream>
+	<math.h>
+	<ostream>
+	"Kepler.h"
+
+1623392559 d:\nir\kpk\kpkv\soordinate.h
+
